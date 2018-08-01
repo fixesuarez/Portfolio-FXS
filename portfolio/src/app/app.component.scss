@@ -1,5 +1,7 @@
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
-
+#my-name {
+    cursor: pointer;
+}
 mat-toolbar {
     justify-content: space-between;
 }
