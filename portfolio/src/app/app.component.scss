@@ -1,6 +1,8 @@
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 app-home {
     width: 100%;
+#my-name {
+    cursor: pointer;
 }
 // Toolbar section
 #toolbar {
@@ -16,7 +18,6 @@ app-home {
 .material-icons {
     margin-right: 15px;
 }
-
 // Sidenav section
 mat-sidenav-container {
     position: absolute;
