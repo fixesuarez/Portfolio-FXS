@@ -1,0 +1,26 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+mat-card {
+    width: 350px;
+}
+
+mat-card-actions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.project-omega-image {
+    background-size: cover;
+}
+
+.button-detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.buttons-skills {
+    display: flex;
+    flex-direction: column;
+}

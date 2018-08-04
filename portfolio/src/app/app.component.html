@@ -1,9 +1,22 @@
-<mat-toolbar>
-    <div class="my-name">François-Xavier Suarez</div>
-    <div>
-        <a mat-button routerLink="/realisations">Réalisations</a>
-        <a mat-button routerLink=".">Compétences</a>
-        <a mat-button routerLink=".">Expérience</a>
-    </div>
-</mat-toolbar>
-<router-outlet></router-outlet>
+<div id="app-container">
+    <mat-toolbar id="toolbar" color="primary">
+        <button mat-icon-button id="burger-button" (click)="toggleNav();"><i class="material-icons">menu</i></button>
+        <h1>François-Xavier Suarez</h1>
+    </mat-toolbar>
+    <mat-sidenav-container>
+        <mat-sidenav #snav [fixedInViewport]="true" [fixedTopGap]="64" mode="side" [(opened)]="opened">
+            <mat-nav-list>
+                <a mat-list-item routerLink="/realisations"><i class="material-icons">card_travel</i>Réalisations</a>
+                <a mat-list-item routerLink="/skills"><i class="material-icons">layers</i>Compétences</a>
+                <a mat-list-item routerLink="." disabled><i class="material-icons">school</i>Expérience</a>
+            </mat-nav-list>
+        </mat-sidenav>
+        <mat-sidenav-content>
+            <app-home></app-home>
+            <app-skills></app-skills>
+            <app-realisations></app-realisations>
+            <app-realisations></app-realisations>
+            <app-realisations></app-realisations>
+        </mat-sidenav-content>
+    </mat-sidenav-container>
+</div>
