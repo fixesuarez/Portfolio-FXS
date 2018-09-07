@@ -1,16 +1,17 @@
 <template>
   <div id="app">
-    <Home/>
+    <Toolbar/>
+    <router-view/>
   </div>
 </template>
 
 <script>
-import Home from './components/Home.vue'
+import Toolbar from './components/core/Toolbar.vue'
 
 export default {
   name: 'app',
   components: {
-    Home,
+    Toolbar,
   }
 }
 </script>
@@ -22,5 +23,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  height: 100vh;  
 }
 </style>
