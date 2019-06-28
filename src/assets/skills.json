@@ -1,0 +1,40 @@
+{
+  "technicalSkills": [{
+    "routeName": "vuejs",
+    "imageName": "vuejs.png",
+    "title": "Vue.js"
+  }, {
+    "routeName": "cSharp",
+    "imageName": "cSharp.png",
+    "title": "C#"
+  }, {
+    "routeName": "htmlCss",
+    "imageName": "html-css.png",
+    "title": "HTML / CSS"
+  }, {
+    "routeName": "saasKaros",
+    "imageName": "karos-gradient.svg",
+    "title": "Bonne Humeur"
+  }, {
+    "routeName": "saasKaros",
+    "imageName": "karos-gradient.svg",
+    "title": "Bonne Humeur"
+  }],
+  "softSkills": [{
+    "routeName": "openMinded",
+    "imageName": "open-minded.svg",
+    "title": "Ouverture aux autres"
+  }, {
+    "routeName": "perseverence",
+    "imageName": "perseverence.svg",
+    "title": "Persévérence"
+  }, {
+    "routeName": "goodMood",
+    "imageName": "good-mood.svg",
+    "title": "Bonne Humeur"
+  }, {
+    "routeName": "organization",
+    "imageName": "organization.svg",
+    "title": "Organisation"
+  }]
+}
