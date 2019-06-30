@@ -2,8 +2,11 @@
   <div id="home-container">
     <div class="background-image-container">
       <img src="../assets/home_background.png" alt="" class="home-page-background">
-      <p class="proverb-first-line">Qui s'endort avec le cul qui gratte</p>
-      <p class="proverb-second-line">Se réveille avec le doigt qui pue.</p>
+      <p class="proverb-first-line">Si haut que l'on soit placé</p>
+      <p class="proverb-second-line">On n'est jamais assis que sur son cul</p>
+      <div class="scroll-icn-container">
+        <img src="../assets/chevron-down-white.svg" alt="" class="scroll-icn">
+      </div>
     </div>
     <div class="about-me-article">
       <div class="about-me-header">
@@ -68,7 +71,7 @@
 
 <style lang="scss">
 @import 'src/styles/variables';
-$profile-picture-size: 100px;
+$profile-picture-size: 90px;
 #home-container {
   overflow: auto;
   .background-image-container {
@@ -140,6 +143,30 @@ $profile-picture-size: 100px;
       text-align: center;
       font-size: 40px;
     }
+  }
+}
+
+.scroll-icn-container {
+  position: absolute;
+  left: 50%;
+  bottom: 5%;
+  padding: 10px 20px;
+  background: rgba(0, 0, 0, 1);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: floating 0.95s ease alternate infinite;
+  .scroll-icn {
+    width: 30px;
+  }
+}
+@keyframes floating {
+  from {
+    transform: translate(-50%, 0px);
+  }
+  to {
+    transform: translate(-50%, -15px);
   }
 }
 </style>

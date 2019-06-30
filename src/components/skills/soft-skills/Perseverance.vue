@@ -20,7 +20,7 @@
     </p>
     <h4>Apprentissage d'Angular</h4>
     <p class="article-paragraph">Arrivé en alternance, j'ai été positionné sur un projet interne, co-responsable de la partie front-end. Ayant suivi une formation exclusivement sur le backend et n'ayant alors pas de référent technique, il m'a fallu me former seul depuis les connaissances les plus basique, dans l'optique d'utiliser un framework javascript puissant et relativement complexe, pour lequel la courbe d'apprentissage n'est pas la plus douce.
-      <br>Faisant face à de nombreuses difficultés liées au framework en lui-même, l'apprentissage du TypeScript, ou la prise en main du Sass, je suis finalement parvenu à prendre le lead et devenir finalement le référent en matière d'UX, d'UI ou d'intégration.
+      <br>Faisant face à de nombreuses difficultés liées au framework en lui-même, l'apprentissage du TypeScript, ou la prise en main du Sass, je suis finalement parvenu à prendre le lead et devenir finalement le référent en matière d'UI ou d'intégration.
     </p>
     <h3>Regard critique</h3>
     <p class="article-paragraph">J'ai le sentiment que la persévérance fait partie intégrante de mon caractère. Cependant, je suis aujourd'hui conscient et j'essaie d'améliorer mon comportement en réaction aux difficultés que je rencontre. En effet, j'ai tendance à trop me disperser au tout début et trouver la source du problème. Par ailleurs, je me serais parfois épargné d'importantes pertes de temps si j'avais été cherché de l'aide plutôt que d'essayer de trouver la solution par moi-même.</p>

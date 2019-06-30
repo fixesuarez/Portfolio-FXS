@@ -9,31 +9,31 @@
     <div class="realisation-cards-container">
       <router-link :to="{ name: 'saasKaros' }" tag="div" class="realisation-card">
         <div class="image-card-container card-karos-saas">
-          <img class="realisation-image" src="../../assets/karos-gradient.svg" alt="">
+          <img class="realisation-image" src="../../assets/card-images/karos-gradient.svg" alt="">
         </div>
         <span class="card-title">SaaS Karos</span>
       </router-link>
       <router-link :to="{ name: 'omega' }" tag="div" class="realisation-card">
         <div class="image-card-container card-omega">
-          <img class="realisation-image" src="../../assets/omega.png" alt="">
+          <img class="realisation-image" src="../../assets/card-images/omega.png" alt="">
         </div>
         <span class="card-title">Oméga</span>
       </router-link>
       <router-link :to="{ name: 'apm' }" tag="div" class="realisation-card">
         <div class="image-card-container card-astek">
-          <img class="realisation-image" src="../../assets/astek.png" alt="">
+          <img class="realisation-image" src="../../assets/card-images/astek.png" alt="">
         </div>
         <span class="card-title">Astek Project Manager</span>
       </router-link>
       <router-link :to="{ name: 'afk' }" tag="div" class="realisation-card">
         <div class="image-card-container card-afk">
-          <img class="realisation-image" src="../../assets/afk.png" alt="">
+          <img class="realisation-image" src="../../assets/card-images/afk.png" alt="">
         </div>
         <span class="card-title">Away From Keyboard</span>
       </router-link>
       <router-link :to="{ name: 'nuit-info' }" tag="div" class="realisation-card">
         <div class="image-card-container card-nuit-info">
-          <img class="realisation-image" src="../../assets/nuit-info.svg" alt="">
+          <img class="realisation-image" src="../../assets/card-images/nuit-info.svg" alt="">
         </div>
         <span class="card-title">Nuit de l'info 2018</span>
       </router-link>

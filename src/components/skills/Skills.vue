@@ -16,7 +16,7 @@
             tag="div"
             class="card">
             <div class="image-card-container">
-              <img :class="['image', `logo-${technicalSkill.title}`]" :src="require(`@/assets/${technicalSkill.imageName}`)">
+              <img :class="['image', `logo-${technicalSkill.title}`]" :src="require(`@/assets/card-images/${technicalSkill.imageName}`)">
             </div>
             <span class="card-title">{{ technicalSkill.title }}</span>
           </router-link>
@@ -32,7 +32,7 @@
             tag="div"
             class="card">
             <div class="image-card-container soft-skill-image-container">
-              <img :class="['image']" :src="require(`@/assets/${softSkill.imageName}`)" alt="">
+              <img :class="['image']" :src="require(`@/assets/card-images/${softSkill.imageName}`)" alt="">
             </div>
             <span class="card-title">{{ softSkill.title }}</span>
           </router-link>
@@ -112,7 +112,6 @@ export default {
   from {
     transform: translate(-50%, 0px);
   }
-
   to {
     transform: translate(-50%, -15px);
   }

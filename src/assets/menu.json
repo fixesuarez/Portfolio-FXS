@@ -1,0 +1,28 @@
+[{
+  "label": "Accueil",
+  "pathName": "home"
+}, {
+  "label": "Réalisations",
+  "pathName": "realisations",
+  "subMenuItems": [{
+    "label": "SaaS Karos",
+    "pathName": "saasKaros"
+  }, {
+    "label": "Omega",
+    "pathName": "omega"
+  }, {
+    "label": "A.F.K.",
+    "pathName": "afk"
+  }, {
+    "label": "APM",
+    "pathName": "apm"
+  }, {
+    "label": "Nuit de l'info",
+    "pathName": "nuit-info"
+  }]
+}, {
+  "label": "Compétences",
+  "pathName": "skills",
+  "subMenuItems": [{
+  }]
+}]

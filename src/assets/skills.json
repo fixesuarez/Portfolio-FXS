@@ -4,22 +4,19 @@
     "imageName": "vuejs.png",
     "title": "Vue.js"
   }, {
-    "routeName": "cSharp",
-    "imageName": "cSharp.png",
-    "title": "C#"
-  }, {
     "routeName": "htmlCss",
     "imageName": "html-css.png",
     "title": "HTML / CSS"
   }, {
-    "routeName": "saasKaros",
-    "imageName": "karos-gradient.svg",
-    "title": "Bonne Humeur"
+    "routeName": "cSharp",
+    "imageName": "cSharp.png",
+    "title": "C#"
   }, {
-    "routeName": "saasKaros",
-    "imageName": "karos-gradient.svg",
-    "title": "Bonne Humeur"
+    "routeName": "git",
+    "imageName": "git.png",
+    "title": "Git"
   }],
+  
   "softSkills": [{
     "routeName": "openMinded",
     "imageName": "open-minded.svg",

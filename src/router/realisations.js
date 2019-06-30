@@ -9,7 +9,8 @@ const basePath = '/realisations'
 
 export default [{
   path: basePath,
-  component: Realisations
+  component: Realisations,
+  name: 'realisations'
 }, {
   path: `${basePath}/omega`,
   component: RealisationOmega,
