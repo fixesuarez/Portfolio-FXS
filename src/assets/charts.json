@@ -1,0 +1,51 @@
+{
+  "softSkillsChart": {
+    "type": "radar",
+    "data": {
+        "labels": ["Vuejs", "HTML/CSS", "C#", "Git"],
+        "datasets": [{
+            "label": "Compétences techniques",
+            "data": [5, 4, 3, 4],
+            "backgroundColor": "rgba(240, 195, 0, 0.2)",
+            "borderColor": "rgba(240, 195, 0, 1)",
+            "pointBackgroundColor": "rgba(240, 195, 0, 0.4)"
+        }]
+    },
+    "options": {
+      "legend": {
+        "position": "top"
+      },
+      "scale": {
+        "ticks": {
+          "beginAtZero": true,
+          "stepSize": 1
+        }
+      }
+    }
+  },
+  "technicalSkillsChart": {
+    "type": "radar",
+    "data": {
+        "labels": ["Ouverture aux autres", "Persévérance", "Bonne humeur", "Organisation"],
+        "datasets": [{
+            "label": "Compétences transverses",
+            "data": [5, 4.5, 4, 3.5],
+            "backgroundColor": "rgba(0, 45, 240, 0.2)",
+            "borderColor": "rgba(0, 45, 240, 1)",
+            "pointBackgroundColor": "rgba(0, 45, 240, 0.4)"
+        }]
+    },
+    "options": {
+      "legend": {
+        "position": "top"
+      },
+      "scale": {
+        "ticks": {
+          "beginAtZero": true,
+          "stepSize": 1
+        }
+      }
+    }
+  }
+}
+  

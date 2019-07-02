@@ -1,13 +1,13 @@
 <template>
 <div :class="['app-container', { 'extended': isMenuExtended }]">
-  <div class="btn-menu-wrapper" @click="toggleMenu()">
+  <div class="btn-menu-wrapper" @click.stop="toggleMenu()">
     <div class="menu-container">
       <div class="line line-top" />
       <div class="line line-center" />
       <div class="line line-bottom line-short" />
     </div>
   </div>
-  <div class="menu-panel-wrapper">
+  <div class="menu-panel-wrapper" v-click-outside="toggleMenu">
     <div class="menu-panel-container">
       <div class="menu-profile">
         <img src="./assets/fx.png" alt="profile-picture" class="profile-picture">
@@ -18,38 +18,54 @@
         </div>
       </div>
       <div class="menu-links-container">
-        <router-link
+        <router-link class="menu-item-container"
           v-for="(menu, index) in menu"
           :key="index"
+          @mouseenter.native="setMenuVisible(menu.label)"
           @click.native="toggleMenu()"
-          tag="span"
-          :to="{ name: menu.pathName }"
-          class="menu-item">
-          {{ menu.label }}
+          tag="div"
+          :to="{ name: menu.pathName }">
+          <span class="menu-item">{{ menu.label }}</span>
+          <div
+            @mouseleave="setMenuVisible('')"
+            class="sub-menu-items-container"
+            v-if="isSubmenuToShow(menu.label)">
+            <div class="sub-menu-wrapper"
+              v-for="(subMenu, index) in menu.subMenuItems"
+              :key="index">
+              <p v-if="subMenu.category" class="category-label">{{ subMenu.category }}</p>
+              <router-link class="sub-menu-item-container"
+                @click.native.stop="toggleMenu()"
+                tag="div"
+                :to="{ name: subMenu.pathName }">
+                <span class="sub-menu-item">{{ subMenu.label }}</span>
+              </router-link>
+            </div>
+          </div>
         </router-link>
       </div>
     </div>
   </div>
   <div id="app" :class="{ 'extended': isMenuExtended }" >
-    <!-- <Toolbar/> -->
     <router-view/>
   </div>
 </div>
 </template>
 
 <script>
-import Toolbar from './components/core/Toolbar.vue'
-
 import menu from './assets/menu'
+
+import { clickOutside } from '@/lib/directives'
 
 export default {
   name: 'app',
-  components: {
-    Toolbar,
+  directives:  { 
+    clickOutside
   },
   data () {
     return {
       isMenuExtended: false,
+      activeMenu: '',
       menu
     }
   },
@@ -58,6 +74,13 @@ export default {
   methods: {
     toggleMenu () {
       this.isMenuExtended = !this.isMenuExtended
+      this.activeMenu = ''
+    },
+    setMenuVisible(menuLabel) {
+      this.activeMenu = menuLabel
+    },
+    isSubmenuToShow (menuLabel) {
+      return menuLabel === this.activeMenu
     }
   }
 }
@@ -106,7 +129,7 @@ h3 {
   $menu-size: 30px;
   .btn-menu-wrapper {
     position: fixed;
-    left: 2%;
+    left: 1%;
     top: 50%;
     transition: left 0.7s ease !important;
     transform: translateY(-50%);
@@ -197,10 +220,11 @@ h3 {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        .menu-item {
+        .menu-item-container {
+          $link-padding: 10px;
           position: relative;
-          margin: 15px 0;
-          padding: 10px 0;
+          margin: 10px 0;
+          padding: $link-padding 0;
           cursor: pointer;
           &:after {
             position: absolute;
@@ -217,8 +241,52 @@ h3 {
               width: 100%;
             }
           }
-          .sub-menu-item {
-            
+          .sub-menu-items-container {
+            position: absolute;
+            top: $link-padding;
+            left: 200px;
+            padding-left: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            border-left: 1px solid #e6e6e6;
+            transform: translateY(-20px);
+            .sub-menu-item-container {
+              position: relative;
+              margin-bottom: 0px;
+              padding: 10px 0;
+              white-space: nowrap;
+              width: 100%;
+              &:after {
+                position: absolute;
+                left: 0;
+                top: 0px;
+                height: 0%;
+                display: block;
+                width: 3px;
+                background: #f0c300;
+                content: '';
+                transition: all 0.4s ease;
+              }
+              &:hover {
+                &:after {
+                  height: 100%;
+                }
+              }
+              .sub-menu-item {
+                margin-left: 15px;
+              }
+            }
+            .sub-menu-wrapper {
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+                .category-label {
+                  margin: 20px 0 5px 0;
+                  font-weight: bold;
+                  white-space: nowrap;
+                }
+            }
           }
         }
       }

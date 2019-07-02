@@ -21,6 +21,7 @@
             <span class="card-title">{{ technicalSkill.title }}</span>
           </router-link>
         </div>
+        <canvas width="300" height="300" class="graph-container" :id="TECHNICAL_SKILLS_CHART_ID"></canvas>
       </div>
       <div class="separator"></div>
       <div class="soft-skills-container skills-category-container">
@@ -37,20 +38,42 @@
             <span class="card-title">{{ softSkill.title }}</span>
           </router-link>
         </div>
+        <canvas width="400" height="400" class="graph-container" :id="SOFT_SKILLS_CHART_ID"></canvas>
       </div>
+    </div>
+    <div class="graphs-info">
+      <p class="notation-explanations">A savoir : les notes attribuées aux différentes compétences sont totalement subjectives, et n'ont de valeur qu'en les comparant entre elles.</p>
     </div>
   </div>
 </template>
 
 <script>
+import Chart from 'chart.js'
+
 import skills from '@/assets/skills'
+import charts from '@/assets/charts.json'
+
+const SOFT_SKILLS_CHART_ID = "soft-skills-chart"
+const TECHNICAL_SKILLS_CHART_ID = "technical-skills-chart"
 
 export default {
   data () {
     return {
       softSkills: skills.softSkills,
-      technicalSkills: skills.technicalSkills
+      SOFT_SKILLS_CHART_ID,
+      technicalSkills: skills.technicalSkills,
+      TECHNICAL_SKILLS_CHART_ID,
+      charts,
+      techSkillsChart: null,
+      softSkillsChart: null
     }
+  },
+  mounted () {
+    let technicalSkillsChart = document.querySelector(`#${TECHNICAL_SKILLS_CHART_ID}`)
+    new Chart(technicalSkillsChart, this.charts.softSkillsChart)
+
+    let softSkillsChart = document.querySelector(`#${SOFT_SKILLS_CHART_ID}`)
+    new Chart(softSkillsChart, this.charts.technicalSkillsChart)
   }
 }
 </script>
@@ -105,6 +128,22 @@ export default {
   .image {
     width: 60% !important;
     height: 60% !important;
+  }
+}
+
+.graph-container {
+  width: 80% !important;
+  max-width: 40vw;
+  max-height: 40vw;
+  margin: 0 auto;
+}
+
+.graphs-info  {
+  background: $background-white;
+  padding: 20px 10%;
+  .notation-explanations {
+    text-align: center;
+    font-style: italic;
   }
 }
 

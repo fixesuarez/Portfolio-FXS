@@ -2,6 +2,38 @@
   "label": "Accueil",
   "pathName": "home"
 }, {
+  "label": "Compétences",
+  "pathName": "skills",
+  "subMenuItems": [{
+    "category": "Compétences techniques",
+    "label": "Persévérance",
+    "pathName": "perseverence"
+  }, {
+    "label": "Ouverture aux autres",
+    "pathName": "openMinded"
+  }, {
+    "label": "Bonne humeur",
+    "pathName": "goodMood"
+  }, {
+    "label": "Organisation",
+    "pathName": "organization"
+  },
+
+  {
+    "category": "Compétences transverses",
+    "label": "Vuejs",
+    "pathName": "vuejs"
+  }, {
+    "label": "HTML / CSS",
+    "pathName": "htmlCss"
+  }, {
+    "label": "C#",
+    "pathName": "cSharp"
+  }, {
+    "label": "Git",
+    "pathName": "git"
+  }]
+}, {
   "label": "Réalisations",
   "pathName": "realisations",
   "subMenuItems": [{
@@ -19,10 +51,5 @@
   }, {
     "label": "Nuit de l'info",
     "pathName": "nuit-info"
-  }]
-}, {
-  "label": "Compétences",
-  "pathName": "skills",
-  "subMenuItems": [{
   }]
 }]

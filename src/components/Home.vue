@@ -9,14 +9,14 @@
       </div>
     </div>
     <div class="about-me-article">
-      <div class="about-me-header">
-        <img src="../assets/profile-picture.jpg" alt="profile-picture" class="profile-picture">
-        <div class="profile-description-container">
-          <span class="profile-name">François-Xavier</span>
-          <span class="profile-job">Développeur front-end</span>
-        </div>
-      </div>
       <div class="article-content">
+        <div class="about-me-header">
+          <img src="../assets/profile-picture.jpg" alt="profile-picture" class="profile-picture">
+          <div class="profile-description-container">
+            <span class="profile-name">François-Xavier</span>
+            <span class="profile-job">Développeur front-end</span>
+          </div>
+        </div>
         <h3>Une vision d'ensemble</h3>
         <p class="article-paragraph">
           Je fais partie d'une fratrie de 8 enfants. Indéniablement, cela a influé sur mon sens du partage, mon éducation, ma mentalité et mon épanouïssement personnel.
@@ -71,6 +71,8 @@
 
 <style lang="scss">
 @import 'src/styles/variables';
+@import 'src/styles/article';
+
 $profile-picture-size: 90px;
 #home-container {
   overflow: auto;
@@ -99,8 +101,6 @@ $profile-picture-size: 90px;
     object-fit: cover;
   }
   .about-me-article {
-    width: 50%;
-    margin: 0 auto;
     padding: 50px 0;
     .about-me-header {
       display: flex;
@@ -119,21 +119,6 @@ $profile-picture-size: 90px;
         .profile-job {
           color: rgba(0 ,0, 0, 0.54);
           margin-top: 3px;
-        }
-      }
-    }
-    h3 {
-      margin-top: 45px;
-      font-weight: 600;
-      font-size: 34px;
-    }
-    .article-paragraph {
-      font-size: 16px;
-      line-height: 1.5;
-      ul {
-        margin: 15px 0;
-        li {
-          margin-bottom: 10px;
         }
       }
     }
