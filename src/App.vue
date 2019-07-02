@@ -9,14 +9,14 @@
   </div>
   <div class="menu-panel-wrapper" v-click-outside="toggleMenu">
     <div class="menu-panel-container">
-      <div class="menu-profile">
+      <router-link class="menu-profile" tag="div" :to="{ name: 'home' }" @click.native="toggleMenu()">
         <img src="./assets/fx.png" alt="profile-picture" class="profile-picture">
         <div class="profile-description-container">
           <h1 class="profile-name">François-Xavier</h1>
           <span class="profile-job">Développeur front-end</span>
           <span class="profile-job">Gardien de la paix avant tout</span>
         </div>
-      </div>
+      </router-link>
       <div class="menu-links-container">
         <router-link class="menu-item-container"
           v-for="(menu, index) in menu"
@@ -194,6 +194,7 @@ h3 {
     .menu-panel-container {
       padding: 40px 5%;
       .menu-profile {
+        cursor: pointer;
         display: flex;
         .profile-picture {
           max-width: $profile-picture-size;

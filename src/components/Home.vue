@@ -60,6 +60,26 @@
           </p>
       </div>
     </div>
+    <div class="timeline-wrapper">
+      <div class="experience-item-container">
+        <div class="timeline-stroke" />
+        <div class="experience-image-container">
+          <img src="../assets/fx.png" alt="" class="experience-image">
+        </div>
+      </div>
+      <div class="experience-item-container">
+        <div class="timeline-stroke" />
+        <div class="experience-image-container">
+          <img src="../assets/fx.png" alt="" class="experience-image">
+        </div>
+      </div>
+      <div class="experience-item-container">
+        <div class="timeline-stroke" />
+        <div class="experience-image-container">
+          <img src="../assets/fx.png" alt="" class="experience-image">
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -152,6 +172,35 @@ $profile-picture-size: 90px;
   }
   to {
     transform: translate(-50%, -15px);
+  }
+}
+
+// Timeline
+.timeline-wrapper {
+  margin: 0 10% 50px 10%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  display: flex;
+  align-items: center;
+  .experience-item-container {
+    display: flex;
+    align-items: center;
+    .timeline-stroke {
+      height: 2px;
+      width: 100px;
+      background: $main-color;
+    }
+    .experience-image-container {
+      max-height: 100px;
+      height: 100px;
+      width: 100px;
+      border: 2px solid $main-color;
+      border-radius: 100%;
+      .experience-image {
+        height: 100%;
+        width: 100%;
+      }
+    }
   }
 }
 </style>
