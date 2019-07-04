@@ -3,17 +3,17 @@
     <h3>Définition</h3>
     <p class="article-paragraph">
       Le HTML, pour <i>Hypertext Markup Language,</i> est un langage de balisage conçu pour structurer et représenter les sites web, sous la structure d'un arbre.
-      Souvent utilisé en association avec le javascript et le aujourd'hui indissociablement du CSS, pour <i>Cascading Style Sheets</i>, pour la mise en page et les animations graphique.
+      Souvent utilisé en association avec le javascript et indissociablement du CSS (<i>Cascading Style Sheets</i>) pour la mise en page et les animations graphique.
     </p>
 
     <h3>Un apprentissage en autodidacte</h3>
     <p class="article-paragraph">
-      Le web est un unvers ou règne la bidouille. Il n'y a pas de difficulté technique importante dans ces deux disciplines, c'est donc avec aisance que je me suis approprié ces deux atouts.
+      Le web est un univers ou règne la bidouille. Il n'y a pas de difficulté technique importante dans ces deux disciplines, c'est donc avec aisance que je me suis approprié ces deux atouts.
       La subtilité consiste à conserver un code lisible, compréhensible en une lecture, et facilement éditable par autrui.
     </p>
     <p class="article-paragraph">
-      Le design d'interface graphique <i>(appelé User Interface design)</i> et leurs intéractions avec le système <i>(appelé User eXperience design)</i> sont des discpilines à part entière.
-      Leur apprentissage doit être quotidien, car les tendances et les normes changent constamment, et étant récemment arrivé dans l'univers du développement frontend, je suis encore novice en la matière.
+      Le design d'interface graphique <i>(appelé User Interface design)</i> et leurs intéractions avec le système <i>(appelé User eXperience design)</i> sont des disciplines à part entière.
+      Leur apprentissage doit être quotidien, car les tendances et les normes changent constamment. Etant récemment arrivé dans l'univers du développement frontend, je suis encore novice en la matière.
     </p>
     <p class="article-paragraph">
       Cependant, j'ai développé une aptitude certaine en ce qui concerne l'intégration, c'est à dire la mise en forme d'interfaces basée sur une maquette.
@@ -28,6 +28,9 @@
     <p class="article-paragraph">
       A ma charge donc, pour les temps à venir de prendre le temps de me documenter à leur sujet, mais également de me pencher sur les fonctionnalités les plus avancées de ces deux langages, qui même si rarement utilisées, pourraient m'être fortes utiles.
     </p>
+    <div class="articles-links-buttons">
+      <router-link class="article-link-btn" :to="{ name: 'skills' }">Retour aux compétences</router-link>
+    </div>
   </div>
 </template>
 

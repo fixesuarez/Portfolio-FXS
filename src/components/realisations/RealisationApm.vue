@@ -27,7 +27,7 @@
     </p>
     <p class="article-paragraph">
       Accompagné d’un UX/UI designer, je suis monté en compétences sur ma toute première technologie frontend.
-      Nous faisions des stand-up meetings qui nous ont permis de suivre l’avancée de chacun, mais également des réunions hebdomadaires avec le Product Owner avec une démonstration des développements de la semaine passée.
+      Nous faisions des stand-up meetings qui nous ont permis de suivre l’avancée de chacun, mais également des réunions hebdomadaires avec le Product Owner accompagnées de démonstrations des développements de la semaine passée.
     </p>
     <h3>Acteurs :</h3>
     <p class="article-paragraph">
@@ -42,7 +42,8 @@
 
     <h3>Les résultats :</h3>
     <p class="article-paragraph">
-      Dans les 4 mois qui ont précédés la fin de mon expérience chez Astek, nous avons eu le temps de mettre en place les fonctionnalités principales que l’on peut retrouver dans la méthode Kanban. La partie graphique et gestion des droits restaient encore grandement améliorée.
+      Dans les 4 mois qui ont précédés la fin de mon expérience chez Astek, nous avons eu le temps de mettre en place les fonctionnalités principales que l’on peut retrouver dans la méthode Kanban.
+      La partie graphique et gestion des droits restaient encore grandement à améliorer.
     </p>
     <h3>Les lendemains du projet.</h3>
     <p class="article-paragraph">
@@ -50,8 +51,12 @@
     </p>
     <h3>Mes apports sur le projet, ma valeur ajoutée, les enseignements tirés :</h3>
     <p class="article-paragraph">
-      L’occasion a été parfaite pour faire la transition entre le développeur backend que j’étais vers le développeur frontend que je suis aujourd’hui. Aujourd’hui, j’ai donc pratiqué deux des trois frameworks javascripts dominant le marché : Angular et Vuejs.
+      L’occasion a été parfaite pour faire la transition entre le développeur backend que j’étais vers le développeur frontend que je suis aujourd’hui.
+      A ce jour, j’ai donc pratiqué deux des trois frameworks javascripts dominant le marché : Angular et Vuejs.
     </p>
+    <div class="articles-links-buttons">
+      <router-link class="article-link-btn" :to="{ name: 'realisations' }">Retour aux réalisations</router-link>
+    </div>
   </div>
 </template>
 
@@ -62,5 +67,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import 'src/styles/article'
+@import 'src/styles/article';
 </style>

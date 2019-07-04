@@ -2,7 +2,9 @@
   <div class="article-content">
     <h3>Introduction</h3>
     <p class="article-paragraph">
-      Vuejs un l’un des 3 principaux framework javascript qui permet de développer la partie frontend des applications web, aux côtés d’Angular et React. Bien qu’il soit à ce jour moins utilisé que ce dernier dans les projets professionnels, la communauté est sans cesse grandissante, et le nombre de « Stars » sur GitHub a dépassé celui de React, supporté par Facebook, ce qui lui promet un bel avenir.
+      Vuejs un l’un des 3 principaux framework javascript qui permet de développer la partie frontend des applications web, aux côtés d’Angular et React.
+      Bien qu’il soit à ce jour moins utilisé que ces derniers dans les projets professionnels, la communauté est sans cesse grandissante, et le nombre de « Stars » sur GitHub a dépassé celui de React, supporté par Facebook.
+      Cela laisse penser qu'un bel avenir lui est promis.
     </p>
     <h3>Un changement de cap</h3>
       <p class="article-paragraph">
@@ -12,11 +14,14 @@
       </p>
     <h3>Une pratique désormais intensive</h3>
     <p class="article-paragraph">
-      C’est une technologie que je pratique depuis lors quotidiennement pour faire évoluer les SaaS que l’on vend à nos clients.
+      C’est une technologie que je pratique depuis lors quotidiennement pour faire évoluer les <router-link :to="{ name: 'saasKaros' }">SaaS</router-link> que l’on vend à nos clients.
       J’ai à ce jour une autonomie suffisante pour pouvoir réaliser de grosses évolutions et n’importe quelle opération de maintenance. Avant d’arriver à ce stade, il m’a fallu environ 6 mois d’apprentissage technique et d’appropriation de la base de code.
-      J’ai également eu l’occasion de m’exercer durant le Nuit de l’Info.
+      J’ai également eu l’occasion de m’exercer durant la <router-link :to="{ name: 'nuit-info' }">Nuit de l’Info</router-link>.
       Aujourd’hui, la connaissance que j’en ai est essentiellement fonctionnelle, mais j’aspire à en apprendre les fonctionnalités les plus poussées, voire à étudier comment le framework a été conçu, et les principes de conception sur lesquels il repose. 
     </p>
+    <div class="articles-links-buttons">
+      <router-link class="article-link-btn" :to="{ name: 'skills' }">Retour aux compétences</router-link>
+    </div>
   </div>  
 </template>
 

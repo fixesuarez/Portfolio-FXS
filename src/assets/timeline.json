@@ -1,0 +1,37 @@
+[{
+  "image": "villetaneuse.jpg",
+  "label": "IUT informatique",
+  "place": "Université Paris XIII",
+  "period": "09/2013 - 09/2015",
+  "responsability": "Etudiant"
+}, {
+  "image": "natixis.png",
+  "label": "Natixis",
+  "place": "Paris, 13e arrondissement",
+  "period": "09/2014 - 09/2015",
+  "responsability": "Alternant"
+}, {
+  "image": "intech.png",
+  "label": "IN'TECH",
+  "place": "Ivry-Sur-Seine",
+  "period": "09/2015 - 09/2019",
+  "responsability": "Etudiant"
+}, {
+  "image": "axones.png",
+  "label": "Axones",
+  "place": "Nanterre",
+  "period": "02/2017 - 07/2017",
+  "responsability": "Stagiaire"
+}, {
+  "image": "astek.png",
+  "label": "Astek",
+  "place": "Boulogne-Billancourt",
+  "period": "09/2017 - 09/2018",
+  "responsability": "Alternant"
+}, {
+  "image": "karos.jpg",
+  "label": "Karos",
+  "place": "Paris, 18e arrondissement",
+  "period": "09/2018 - Aujourd'hui",
+  "responsability": "Alternant"
+}]

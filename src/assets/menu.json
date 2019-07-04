@@ -5,7 +5,7 @@
   "label": "Compétences",
   "pathName": "skills",
   "subMenuItems": [{
-    "category": "Compétences techniques",
+    "category": "Transverses",
     "label": "Persévérance",
     "pathName": "perseverence"
   }, {
@@ -20,7 +20,7 @@
   },
 
   {
-    "category": "Compétences transverses",
+    "category": "Techniques",
     "label": "Vuejs",
     "pathName": "vuejs"
   }, {

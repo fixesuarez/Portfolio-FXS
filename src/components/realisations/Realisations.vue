@@ -2,7 +2,7 @@
   <div class="realisations-index-container">
     <div class="realisations-index-landing">
       <h2 class="landing-text">Réalisations</h2>
-      <div class="scroll-icn-container">
+      <div class="scroll-icn-container" @click="scrollToContent()">
         <img src="../../assets/chevron-down.svg" alt="" class="scroll-icn">
       </div>
     </div>
@@ -38,11 +38,22 @@
         <span class="card-title">Nuit de l'info 2018</span>
       </router-link>
     </div>
+    <div class="articles-links-buttons">
+      <router-link class="article-link-btn" :to="{ name: 'skills' }">Voir mes compétences</router-link>
+    </div>
   </div>
 </template>
 
 <script>
-export default {}
+export default {
+  methods: {
+    scrollToContent () {
+      document.querySelector('.realisation-cards-container').scrollIntoView({
+        behavior: 'smooth'
+      })
+    }
+  }
+}
 </script>
 
 <style lang="scss" scoped>
@@ -56,6 +67,7 @@ export default {}
   display: flex;
   align-items: center;
   justify-content: center;
+  user-select: none;
   .scroll-icn-container {
     position: absolute;
     left: 50%;
@@ -66,6 +78,7 @@ export default {}
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
     animation: floating 0.95s ease alternate infinite;
     .scroll-icn {
       width: 30px;
@@ -119,6 +132,28 @@ export default {}
   }
   .card-afk {
     background: #e6e6e6;
+  }
+}
+
+.articles-links-buttons {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 70px 0;
+  background: $background-white;
+  .article-link-btn {
+    background: #234099;
+    color: white;
+    text-decoration: none;
+    padding: 20px 40px;
+    border-radius: 30px;
+    &:hover {
+      opacity: 0.97;
+      transition: all 0.3s ease;
+      box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.4);
+    }
   }
 }
 

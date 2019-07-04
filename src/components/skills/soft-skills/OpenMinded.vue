@@ -14,12 +14,15 @@
       Faisant partie d’une équipe de développeur, j’ai réalisé une partie des tests et me suis tenu au courant de leurs avancées pour exprimer à la fin mon avis sur la solution la plus viable.
     </p>
     <p class="article-paragraph">
-      D’autre part, pour améliorer le cadre de vie au quotidien dans l’entreprise, j’ai su écouter les réflexions des collègues pour rendre plus chaleureux les espaces de travail et de moment de détente comme le déjeuner, mais aussi renforcer la cohésion en périphérie des horaires de travail.
+      D’autre part, pour améliorer le cadre de vie au quotidien dans l’entreprise, j’ai su écouter les réflexions des collègues pour rendre plus chaleureux les espaces de travail et les moments de détente comme le déjeuner, mais aussi renforcer la cohésion en périphérie des horaires de travail.
     </p>
     <h3>A l’avenir</h3>
     <p class="article-paragraph">
       Il est fort possible qu’après un début de carrière en temps que développeur, j’exprime le souhait de de faire varier mes missions. N’étant pas encore fixé, les deux évolutions naturelles qui s’offrent à moi seraient de devenir chef de projet ou ingénieur d’affaire. Dans les deux cas, il sera nécessaire d’être en lien avec les clients externes, les équipes de développeurs, et les personnes qui expriment leurs besoins.
     </p>
+    <div class="articles-links-buttons">
+      <router-link class="article-link-btn" :to="{ name: 'skills' }">Retour aux compétences</router-link>
+    </div>
   </div>
 </template>
 

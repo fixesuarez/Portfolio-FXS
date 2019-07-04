@@ -7,16 +7,29 @@
       <div class="line line-bottom line-short" />
     </div>
   </div>
-  <div class="menu-panel-wrapper" v-click-outside="toggleMenu">
+  <div class="menu-panel-wrapper">
     <div class="menu-panel-container">
-      <router-link class="menu-profile" tag="div" :to="{ name: 'home' }" @click.native="toggleMenu()">
-        <img src="./assets/fx.png" alt="profile-picture" class="profile-picture">
-        <div class="profile-description-container">
-          <h1 class="profile-name">François-Xavier</h1>
-          <span class="profile-job">Développeur front-end</span>
-          <span class="profile-job">Gardien de la paix avant tout</span>
+      <div class="menu-header">
+        <router-link class="menu-profile" tag="div" :to="{ name: 'home' }" @click.native="toggleMenu()">
+          <img src="./assets/fx.png" alt="profile-picture" class="profile-picture">
+          <div class="profile-description-container">
+            <h1 class="profile-name">François-Xavier</h1>
+            <span class="profile-job">Développeur front-end</span>
+            <span class="profile-job">Gardien de la paix avant tout</span>
+          </div>
+        </router-link>
+        <div style="flex: 1" />
+        <div class="contact-infos-container">
+          <div class="contact-info-container">
+            <img src="./assets/email.svg" class="contact-icn email-icn" alt="">
+            <span class="contact-value email-value">francoisxaviersuarez@gmail.com</span>
+          </div>
+          <div class="contact-info-container">
+            <img src="./assets/phone.svg" class="contact-icn phone-icn" alt="">
+            <span class="contact-value phone-value">+33 6 65 07 54 87</span>
+          </div>
         </div>
-      </router-link>
+      </div>
       <div class="menu-links-container">
         <router-link class="menu-item-container"
           v-for="(menu, index) in menu"
@@ -98,6 +111,7 @@ export default {
 html {
   width: 100vw;
   overflow-x: hidden;
+
 }
 body {
   margin: 0;
@@ -192,10 +206,17 @@ h3 {
     z-index: 2;
     $profile-picture-size: 80px;
     .menu-panel-container {
+      box-sizing: border-box;
+      height: 100%;
       padding: 40px 5%;
-      .menu-profile {
-        cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      .menu-header {
         display: flex;
+        .menu-profile {
+          cursor: pointer;
+          display: flex;
+        }
         .profile-picture {
           max-width: $profile-picture-size;
           max-height: $profile-picture-size;
@@ -221,6 +242,7 @@ h3 {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        flex: 1;
         .menu-item-container {
           $link-padding: 10px;
           position: relative;
@@ -288,6 +310,23 @@ h3 {
                   white-space: nowrap;
                 }
             }
+          }
+        }
+      }
+      .contact-infos-container {
+        justify-self: flex-end;
+        .contact-info-container {
+          display: flex;
+          align-items: center;
+          margin-bottom: 10px;
+          .contact-icn {
+            height: 35px;
+            width: 35px;
+            margin-right: 25px;
+            object-fit: contain;
+          }
+          .contact-value {
+            color: #5c5c5c;
           }
         }
       }

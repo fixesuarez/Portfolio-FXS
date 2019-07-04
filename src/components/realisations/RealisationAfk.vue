@@ -24,11 +24,13 @@
 
     <h3>Les étapes</h3>
     <p class="article-paragraph">
-      Dans un premier temps, il a fallu récolter les fonds nécessaires pour pouvoir proposer les diverses activités à un prix attractif. Pour ce faire, nous avons organisé des buvettes au sein de l’école les matins, en proposant snacks, boissons chaudes et sodas, et des crêpes faîtes maison. Nous avons également préparé un couscous, un chili con carné et un barbecue pour 40 personnes.
+      Dans un premier temps, il a fallu récolter les fonds nécessaires pour pouvoir proposer les diverses activités à un prix attractif.
+      Pour ce faire, nous avons organisé et animé des buvettes au sein de l’école les matins, en proposant snacks, boissons chaudes et sodas, et des crêpes faîtes maison.
+      Nous avons également préparé un couscous, un chili con carne et un barbecue pour 40 personnes.
     </p>
     <p class="article-paragraph">
       Une fois l’objectif atteint, nous sommes partis à la recherche de nos participants, que nous n’avons guère eu de mal à trouver.
-      Après avoir disséminé des affiches et des flyers dans l’école, nous avons commencé une campagne emails.
+      Après avoir disséminé des affiches et des flyers dans l’école, nous avons commencé une campagne d'emails.
     </p>
     <p class="article-paragraph">
       Nous avons clos les inscriptions en passant voir les étudiants dans leur salle de classe, et nous sommes arrêtés lorsqu’il n’y avait plus de place disponible.
@@ -37,18 +39,17 @@
 
     <h3>Acteurs</h3>
     <p class="article-paragraph">
-      Nous étions une équipe de 4 développeurs divisée en deux :
       <ul>
         <li>Catherine Dorignac, suiveur de projet</li>
         <li>La base de loisirs pour l’accrobranche, le bowling, et le prestataire pour le bubble soccer, dans le Urban Soccer</li>
         <li>Les étudiants les membres de l’équipe pédagogique.</li>
       </ul>
-      Nous pouvions nous appuyer sur deux professeurs d’un point de vue technique, et nous pouvions contacter le client dès que nous avions des questions sur les approches fonctionnelles de l’application.
     </p>
 
     <h3>Les résultats</h3>
     <p class="article-paragraph">
-      En réunissant 20 participants pendant chaque activité à faible coût, nous avons tissés des liens entre des étudiants qui se connaissaient peu, et amélioré les relations avec les membres de l’équipe pédagogique d’IN’TECH qui ont souhaité participer.
+      En réunissant 20 participants pendant chaque activité à faible coût,
+      nous avons tissé des liens entre des étudiants qui se connaissaient peu, et amélioré les relations avec les membres de l’équipe pédagogique d’IN’TECH qui ont souhaité participer.
       Evalué avec en même temps qu’une vingtaine de projet, nous nous sommes vus attribué la 2ème place sur le podium.
     </p>
 
@@ -61,6 +62,9 @@
     <p class="article-paragraph">
       Ayant été chef de projet, j’ai été amené à gérer les baisses de motivation de mes camarades, et j’ai assuré un suivi particulier de l’organisation de l’ensemble des actions menées en plus de ma participation.
     </p>
+    <div class="articles-links-buttons">
+      <router-link class="article-link-btn" :to="{ name: 'realisations' }">Retour aux réalisations</router-link>
+    </div>
   </div>
 </template>
 

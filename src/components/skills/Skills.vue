@@ -2,11 +2,11 @@
   <div class="skills-container">
     <div class="skills-index-landing">
       <span class="landing-text">Compétences</span>
-      <div class="scroll-icn-container">
+      <div @click="scrollToContent()" class="scroll-icn-container">
         <img src="../../assets/chevron-down.svg" alt="" class="scroll-icn">
       </div>
     </div>
-    <div class="skills-categories-container">
+    <div class="skills-categories-container" id="articles-content">
       <div class="technical-skills-container skills-category-container">
         <h2 class="category-title">Compétencences Techniques</h2>
         <div class="cards-container">
@@ -44,6 +44,9 @@
     <div class="graphs-info">
       <p class="notation-explanations">A savoir : les notes attribuées aux différentes compétences sont totalement subjectives, et n'ont de valeur qu'en les comparant entre elles.</p>
     </div>
+    <div class="articles-links-buttons">
+      <router-link class="article-link-btn" :to="{ name: 'realisations' }">Voir mes réalisations</router-link>
+    </div>
   </div>
 </template>
 
@@ -74,6 +77,13 @@ export default {
 
     let softSkillsChart = document.querySelector(`#${SOFT_SKILLS_CHART_ID}`)
     new Chart(softSkillsChart, this.charts.technicalSkillsChart)
+  },
+  methods: {
+    scrollToContent () {
+      document.querySelector('#articles-content').scrollIntoView({
+        behavior: 'smooth'
+      })
+    }
   }
 }
 </script>
@@ -88,6 +98,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
+  user-select: none;
   .scroll-icn-container {
     position: absolute;
     left: 50%;
@@ -98,6 +109,7 @@ export default {
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
     animation: floating 0.95s ease alternate infinite;
     .scroll-icn {
       width: 30px;
@@ -144,6 +156,28 @@ export default {
   .notation-explanations {
     text-align: center;
     font-style: italic;
+  }
+}
+
+.articles-links-buttons {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 70px 0;
+  background: $background-white;
+  .article-link-btn {
+    background: #234099;
+    color: white;
+    text-decoration: none;
+    padding: 20px 40px;
+    border-radius: 30px;
+    &:hover {
+      opacity: 0.97;
+      transition: all 0.3s ease;
+      box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.4);
+    }
   }
 }
 

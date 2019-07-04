@@ -4,7 +4,7 @@
       <img src="../assets/home_background.png" alt="" class="home-page-background">
       <p class="proverb-first-line">Si haut que l'on soit placé</p>
       <p class="proverb-second-line">On n'est jamais assis que sur son cul</p>
-      <div class="scroll-icn-container">
+      <div class="scroll-icn-container" @click="scrollToContent()">
         <img src="../assets/chevron-down-white.svg" alt="" class="scroll-icn">
       </div>
     </div>
@@ -60,23 +60,30 @@
           </p>
       </div>
     </div>
+    <div class="articles-links-buttons">
+      <router-link class="article-link-btn" :to="{ name: 'skills' }">Compétences</router-link>
+      <router-link class="article-link-btn" :to="{ name: 'realisations' }">Réalisations</router-link>
+    </div>
     <div class="timeline-wrapper">
-      <div class="experience-item-container">
-        <div class="timeline-stroke" />
+      <div v-for="(experience, index) in experiences" :key="index" class="experience-item-container">
+        <div class="timeline-stroke" v-if="index > 0"/>
         <div class="experience-image-container">
-          <img src="../assets/fx.png" alt="" class="experience-image">
-        </div>
-      </div>
-      <div class="experience-item-container">
-        <div class="timeline-stroke" />
-        <div class="experience-image-container">
-          <img src="../assets/fx.png" alt="" class="experience-image">
-        </div>
-      </div>
-      <div class="experience-item-container">
-        <div class="timeline-stroke" />
-        <div class="experience-image-container">
-          <img src="../assets/fx.png" alt="" class="experience-image">
+          <img :src="require(`@/assets/timeline-images/${experience.image}`)" alt="" class="experience-image">
+          <span class="experience-name">{{ experience.label }}</span>
+          <div class="tooltip-container">
+            <div class="tooltip-content">
+              <span class="tooltip-experience-name">{{ experience.label }}</span>
+              <span class="tooltip-experience-date">{{ experience.period }}</span>
+              <div class="info-container">
+                <span class="info-label">Lieu : </span>
+                <span class="info-value">{{ experience.place }}</span>
+              </div>
+              <div class="info-container">
+                <span class="info-label">responsabilité : </span>
+                <span class="info-value">{{ experience.responsability }}</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -84,9 +91,21 @@
 </template>
 
 <script>
-  export default {
-
+import experiences from '@/assets/timeline.json'
+export default {
+  data () {
+    return {
+      experiences
+    }
+  },
+  methods: {
+    scrollToContent () {
+      document.querySelector('.about-me-article').scrollIntoView({
+        behavior: 'smooth'
+      })
+    }
   }
+}
 </script>
 
 <style lang="scss">
@@ -97,6 +116,7 @@ $profile-picture-size: 90px;
 #home-container {
   overflow: auto;
   .background-image-container {
+    user-select: none;
     height: calc(100vh);
     width: 100%;
     position: relative;
@@ -121,7 +141,7 @@ $profile-picture-size: 90px;
     object-fit: cover;
   }
   .about-me-article {
-    padding: 50px 0;
+    padding-top: 50px;
     .about-me-header {
       display: flex;
       .profile-picture {
@@ -141,6 +161,9 @@ $profile-picture-size: 90px;
           margin-top: 3px;
         }
       }
+    }
+    .article-content {
+      padding-bottom: 0;
     }
     .article-separator {
       display: block;
@@ -162,6 +185,7 @@ $profile-picture-size: 90px;
   align-items: center;
   justify-content: center;
   animation: floating 0.95s ease alternate infinite;
+  cursor: pointer;
   .scroll-icn {
     width: 30px;
   }
@@ -175,13 +199,48 @@ $profile-picture-size: 90px;
   }
 }
 
+.articles-links-buttons {
+  width: 100%;
+  margin: 150px auto 50px auto;
+  text-align: center;
+  opacity: 1;
+  .article-link-btn {
+    margin: 0 50px;
+    background: #234099;
+    color: white;
+    text-decoration: none;
+    padding: 20px 40px;
+    border-radius: 30px;
+    &:hover {
+      opacity: 0.97;
+      transition: all 0.3s ease;
+      box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.4);
+    }
+  }
+}
+
 // Timeline
 .timeline-wrapper {
   margin: 0 10% 50px 10%;
+  padding: 150px 20px 60px 60px;
   overflow-x: auto;
   overflow-y: hidden;
   display: flex;
   align-items: center;
+  &::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+  }
+  &::-webkit-scrollbar {
+    height: 8px;
+    background-color: #F5F5F5;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #234099;
+  }
   .experience-item-container {
     display: flex;
     align-items: center;
@@ -191,14 +250,87 @@ $profile-picture-size: 90px;
       background: $main-color;
     }
     .experience-image-container {
+      position: relative;
       max-height: 100px;
       height: 100px;
       width: 100px;
       border: 2px solid $main-color;
       border-radius: 100%;
       .experience-image {
+        border-radius: 50%;
         height: 100%;
         width: 100%;
+      }
+      .experience-name {
+        position: absolute;
+        top: 120%;
+        left: 50%;
+        transform: translateX(-50%);
+        white-space: nowrap;
+      }
+      .tooltip-container {
+        opacity: 0;
+        position: absolute;
+        bottom: calc(100% + 20px);
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: white;
+        border: 1px solid #e6e6e6;
+        color: #000;
+        border-radius: 3px;
+        z-index: 2;
+        display: flex;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+        .tooltip-content {
+          position: relative;
+          padding: 10px;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          z-index: 2;
+          &:after {
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            width: 10px;
+            height: 10px;
+            background: white;
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
+            // border: 1px solid #e6e6e6;
+            transform: translate(-50%, -50%) rotate(45deg);
+            z-index: -1;
+          }
+          .tooltip-experience-name {
+            align-self: center;
+            font-weight: 900;
+            white-space: nowrap;
+          }
+          .tooltip-experience-date {
+            align-self: center;
+            font-size: 12px;
+            white-space: nowrap;
+            color: #a6a6a6;
+            margin-bottom: 10px;
+
+          }
+          .info-container {
+            white-space: nowrap;
+            margin: 3px 0;
+            .info-label {
+              color: #5c5c5c;
+              font-weight: 700;
+            }
+          }
+        }
+      }
+      &:hover {
+        .tooltip-container {
+          opacity: 1;
+          transition: opacity 0.2s ease;
+        }
       }
     }
   }

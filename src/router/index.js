@@ -9,6 +9,7 @@ import skills from '@/router/skills'
 Vue.use(Router)
 
 export default new Router({
+  mode: 'history',
   routes: [{
     path: '/',
     component: Home,

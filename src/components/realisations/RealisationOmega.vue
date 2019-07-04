@@ -22,7 +22,7 @@
       Nous avons, avec mon équipe, décidé de relever le défi et d’essayer de développer un « POC » (Proof of Concept), en l’espace de 4 mois.
     </p>
     <p class="article-paragraph">
-      Vis-à-vis des différentes applications auxquelles nous étions dépendantes, il nous a fallu être particulièrement vigilent à leurs conditions d’utilisation, que ce soit dans les aspects légaux ou en nombre de requêtes à envoyer à leurs API.
+      Vis-à-vis des différentes applications auxquelles nous étions dépendantes, il nous a fallu être particulièrement vigilant à leurs conditions d’utilisation, que ce soit dans les aspects légaux ou en nombre de requêtes à envoyer à leurs API.
     </p>
 
     <div class="article-image-container">
@@ -34,7 +34,7 @@
       Dans un premier temps, je me suis occupé de la connexion aux différentes API qu’étaient Spotify, Deezer et Facebook, en respectant le protocole OAuth 2.0 afin que les utilisateurs puissent se connecter en toute sérénité sans craindre la fuite de leurs informations personnelles.
     </p>
     <p class="article-paragraph">
-      Ensuite, je me suis occupé de mettre en place une chaîne de build afin de faciliter la mise en production des nouvelles versions du projet.
+      Ensuite, je me suis occupé de la mise en place d'une chaîne de build afin de faciliter la mise en production des nouvelles versions du projet.
       Enfin, j’ai été en charge de la base de données de notre serveur, depuis la création du modèle de données, jusqu’au traitement des données (insertion, mises à jour, suppression et lecture), ainsi que de la communication avec le client (navigateur web).
     </p>
     <p class="article-paragraph">
@@ -53,7 +53,8 @@
 
     <h3>Les résultats :</h3>
     <p class="article-paragraph">
-      Nous avons réussi à aller au-delà du POC prévu, en aboutissant sur une version stable de l’application. A la fin du semestre, nous avons été évalués par trois jurys composés de professionnels, qui nous ont attribué la première place parmi plus de 45 projets.
+      Nous avons réussi à aller au-delà du POC prévu, en aboutissant sur une version stable de l’application.
+      A la fin du semestre, nous avons été évalué par trois jurys composés de professionnels, qui nous ont attribué la première place parmi plus de 45 projets.
     </p>
 
     <div class="article-image-container">
@@ -62,7 +63,7 @@
 
     <h3>Les lendemains du projet.</h3>
     <p class="article-paragraph">
-      Nous avons aujourd’hui pour ambition de recommencer les projets depuis zéro afin de passer sur .Net Core 2.0, qui est bien plus maintenable.
+      Nous avons aujourd’hui pour ambition de recommencer le projet depuis zéro afin de passer sur .Net Core 2.0, qui est bien plus maintenable.
       Les librairies que nous avions utilisées à l’époque ne sont plus compatibles, et nous pourrions hautement gagner en performance en cas d’utilisation massive de notre application.
     </p>
     <p class="article-paragraph">
@@ -73,8 +74,11 @@
     <p class="article-paragraph">
       J’ai été le <a routerLink="../../skills/communication">principal contact</a> avec l’équipe frontend, pour ce qui a été des informations que nous devions demander aux API, mais aussi les informations à transmettre au client pour l’affichage.
       J’ai été confronté à des contraintes de sécurité, notamment pour la gestion de l’authentification. A ce niveau, j’ai également géré une « unification des comptes », pour que l’utilisateur n’ait pas besoin de s’authentifier à Deezer, Spotify ET Facebook tour à tour.
-      Aujourd’hui, j’ai acquis les compétences techniques de bases pour pouvoir utiliser le C# pour l’appliquer au développement d’un serveur web.
+      Aujourd’hui, j’ai acquis les compétences techniques de bases pour pouvoir utiliser le <router-link :to="{ name: 'cSharp' }">C#</router-link> pour l’appliquer au développement d’un serveur web.
     </p>
+    <div class="articles-links-buttons">
+      <router-link class="article-link-btn" :to="{ name: 'realisations' }">Retour aux réalisations</router-link>
+    </div>
   </div>
 </template>
 

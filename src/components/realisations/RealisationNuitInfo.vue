@@ -2,7 +2,7 @@
   <div class="article-content">
     <h3>Présentation – Définition</h3>
     <p class="article-paragraph">
-      La nuit de l’info est un concours proposé annuellement à une multitude d’école d’informatique.
+      La nuit de l’info est un concours proposé annuellement à une multitude d’écoles d’informatique.
       Les entreprises partenaires proposent un ou plusieurs défis.
       Les étudiants, en équipe, peuvent choisir de relever jusqu’à 6 défis, auxquels ils doivent répondre entre 20h et 8h le lendemain.
     </p>
@@ -13,7 +13,7 @@
     <h3>Contexte, enjeu</h3>
     <p class="article-paragraph">
       Nous avons fait le choix de ne relever qu’un défi, pour nous concentrer un maximum dessus et maximiser nos chances.
-      L’enjeu était entièrement personnel et pas académique nous voulions savoir ce que nous étions capables de développer en un laps de temps si court, et nous comparer à ce que nos compétences valent par rapport à celles des ingénieurs des écoles concurrentes.
+      L’enjeu était entièrement personnel et pas académique : nous voulions savoir ce que nous étions capables de développer en un laps de temps si court, et comparer ce que nos compétences valent par rapport à celles des ingénieurs des écoles concurrentes.
     </p>
 
     <h3>Les étapes</h3>
@@ -36,12 +36,15 @@
 
     <h3>Mes apports sur le projet, ma valeur ajoutée, les enseignements tirés</h3>
     <p class="article-paragraph">
-      La difficulté a été de prioriser les tâches, trouver les bon équilibre entre une interface agréable, des fonctionnalités robustes, et une architecture simple et efficace.
-      Au terme dizaine d'heure de travail, nous avons pu constater fièrement le travail abattu, qui plus est après une journée de travail complète dans nos entreprises respectives.
+      La difficulté a été de prioriser les tâches, trouver le bon équilibre entre une interface agréable, des fonctionnalités robustes, et une architecture simple et efficace.
+      Au terme dizaine d'heures de travail, nous avons pu constater fièrement le travail abattu, qui plus est après une journée de travail complète dans nos entreprises respectives.
     </p>
     <p class="article-paragraph">
-      J'ai pu me rendre compte que j'ai acquis des bases solides dans l'architecture d'un projet front, en mettant en place efficacement un router, un store, et différentes fichiers helpers qui nous ont servi à faire des appels asynchrones à notre serveur, mais qui recensaient aussi des fonctions globales au projet.
+      J'ai pu me rendre compte que j'ai acquis des bases solides dans l'architecture d'un projet front, en mettant en place efficacement un router, un store, et différents fichiers helpers qui nous ont servi à faire des appels asynchrones à notre serveur, mais qui recensaient aussi des fonctions globales au projet.
     </p>
+    <div class="articles-links-buttons">
+      <router-link class="article-link-btn" :to="{ name: 'realisations' }">Retour aux réalisations</router-link>
+    </div>
   </div>
 </template>
 
