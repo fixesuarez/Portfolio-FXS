@@ -1,6 +1,9 @@
 <template>
   <div class="article-content">
-    <h3>Présentation – Définition</h3>
+    <h2 class="article-title">Nuit de l'info</h2>
+    <div class="article-image-container">
+      <img src="../../assets/card-images/nuit-info.svg" alt="" class="article-cover">
+    </div>
     <p class="article-paragraph">
       La nuit de l’info est un concours proposé annuellement à une multitude d’écoles d’informatique.
       Les entreprises partenaires proposent un ou plusieurs défis.
@@ -42,6 +45,16 @@
     <p class="article-paragraph">
       J'ai pu me rendre compte que j'ai acquis des bases solides dans l'architecture d'un projet front, en mettant en place efficacement un router, un store, et différents fichiers helpers qui nous ont servi à faire des appels asynchrones à notre serveur, mais qui recensaient aussi des fonctions globales au projet.
     </p>
+    <div class="related-articles-container">
+      <h3 class="related-articles-title">Voir aussi :</h3>
+      <div class="articles-chips-container">
+        <router-link class="article-chip" :to="{ name: 'perseverence' }">Persérérance</router-link>
+        <router-link class="article-chip" :to="{ name: 'vuejs' }">Vuejs</router-link>
+        <router-link class="article-chip" :to="{ name: 'cSharp' }">C#</router-link>
+        <router-link class="article-chip" :to="{ name: 'git' }">Git</router-link>
+        <router-link class="article-chip" :to="{ name: 'htmlCss' }">HTML / CSS</router-link>
+      </div>
+    </div>
     <div class="articles-links-buttons">
       <router-link class="article-link-btn" :to="{ name: 'realisations' }">Retour aux réalisations</router-link>
     </div>
@@ -55,5 +68,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import 'src/styles/article'
+@import 'src/styles/article';
+.article-image-container {
+  width: 80%;
+  margin: 0 auto 50px auto;
+  background: black;
+  .article-cover {
+    width: 100%;
+    height: 100%;
+  }
+}
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div class="article-content">
-    <h3>Présentation – Définition :</h3>
+    <h2 class="article-title">Astek Project Manager</h2>
     <p class="article-paragraph">
       APM est un outil de gestion de projet développé en interne par la société Astek. Destiné pour être utilisé à l’échelle nationale, il s’inspire de la méthode Kanban qui permet de visualiser les différentes tâches dans un board.
     </p>
@@ -54,6 +54,12 @@
       L’occasion a été parfaite pour faire la transition entre le développeur backend que j’étais vers le développeur frontend que je suis aujourd’hui.
       A ce jour, j’ai donc pratiqué deux des trois frameworks javascripts dominant le marché : Angular et Vuejs.
     </p>
+    <div class="related-articles-container">
+      <h3 class="related-articles-title">Voir aussi :</h3>
+      <div class="articles-chips-container">
+        <router-link class="article-chip" :to="{ name: 'openMinded' }">Ouverture aux autres</router-link>
+      </div>
+    </div>
     <div class="articles-links-buttons">
       <router-link class="article-link-btn" :to="{ name: 'realisations' }">Retour aux réalisations</router-link>
     </div>

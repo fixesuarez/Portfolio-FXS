@@ -28,6 +28,10 @@
             <img src="./assets/phone.svg" class="contact-icn phone-icn" alt="">
             <span class="contact-value phone-value">+33 6 65 07 54 87</span>
           </div>
+          <div class="contact-info-container">
+            <img src="./assets/linkedin.svg" class="contact-icn linkedin-icn" alt="">
+            <span class="contact-value linkedin-value"><a class="linkedin-link" target="_blank" href="https://www.linkedin.com/in/francoisxaviersuarez/">www.linkedin.com/in/francoisxaviersuarez/</a></span>
+          </div>
         </div>
       </div>
       <div class="menu-links-container">
@@ -327,6 +331,9 @@ h3 {
           }
           .contact-value {
             color: #5c5c5c;
+            .linkedin-link {
+              text-decoration: none;
+            }
           }
         }
       }

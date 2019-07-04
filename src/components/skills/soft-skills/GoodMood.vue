@@ -1,6 +1,7 @@
 <template>
   <div class="article-content">
-    <h3>Définition</h3>
+    <h2 class="article-title">Bonne humeur</h2>
+    <img src="../../../assets/article-covers/good-mood.svg" alt="" class="article-cover">
     <p class="article-paragraph">
       La bonne humeur est l'état d'esprit momentané d'une personne qui fait permet aux autres de ressentir passivement son bien-être.
     </p>
@@ -25,6 +26,13 @@
     <p class="article-paragraph">
       C'est au détour de conversations très innocentes que j'entends ce genre de réflexions, qui m'encouragent plus encore à continuer mes efforts, m'indiquant qu'ils ont déjà porté leurs fruits.
     </p>
+    <div class="related-articles-container">
+      <h3 class="related-articles-title">Voir aussi :</h3>
+      <div class="articles-chips-container">
+        <router-link class="article-chip" :to="{ name: 'afk'}">A.F.K.</router-link>
+        <router-link class="article-chip" :to="{ name: 'nuit-info'}">Nuit de l'info</router-link>
+      </div>
+    </div>
     <div class="articles-links-buttons">
       <router-link class="article-link-btn" :to="{ name: 'skills' }">Retour aux compétences</router-link>
     </div>

@@ -4,6 +4,16 @@
   padding: 50px 0;
   max-width: 750px;
 }
+h2.article-title {
+  text-align: center;
+  font-size: 38px;
+  margin: 0 0 40px 0;
+}
+.article-cover {
+  width: 100%;
+  object-fit: contain;
+  margin-bottom: 50px;
+}
 h3 {
   max-width: 650px;
   margin-top: 45px;
@@ -39,4 +49,30 @@ h3 {
   margin: 60px 0 40px;
   text-align: center;
   font-size: 40px;
+}
+
+.related-articles-container {
+  margin-top: 100px;
+  h3.related-articles-title {
+    font-size: 26px;
+    font-weight: 500;
+    color: #5c5c5c;
+  }
+  .articles-chips-container {
+    display: flex;
+    flex-wrap: wrap;
+    .article-chip {
+      padding: 10px 20px;
+      margin: 0 10px 5px 0;
+      background-color: rgba(240, 195, 0, 0.8);
+      border: 1px solid #e6e6e6;
+      border-radius: 6px;
+      text-decoration: none;
+      &:hover {
+        background-color: rgba(240, 195, 0, 0.9);
+        box-shadow: 0 1px 4px 0px rgba(0, 0, 0, 0.1);
+        transition: all 0.2s ease;
+      }
+    }
+  }
 }

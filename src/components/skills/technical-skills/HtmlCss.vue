@@ -1,6 +1,7 @@
 <template>
   <div class="article-content">
-    <h3>Définition</h3>
+    <h2 class="article-title">HTML / CSS</h2>
+    <img src="../../../assets/article-covers/html-css.svg" alt="" class="article-cover">
     <p class="article-paragraph">
       Le HTML, pour <i>Hypertext Markup Language,</i> est un langage de balisage conçu pour structurer et représenter les sites web, sous la structure d'un arbre.
       Souvent utilisé en association avec le javascript et indissociablement du CSS (<i>Cascading Style Sheets</i>) pour la mise en page et les animations graphique.
@@ -28,6 +29,15 @@
     <p class="article-paragraph">
       A ma charge donc, pour les temps à venir de prendre le temps de me documenter à leur sujet, mais également de me pencher sur les fonctionnalités les plus avancées de ces deux langages, qui même si rarement utilisées, pourraient m'être fortes utiles.
     </p>
+    <div class="related-articles-container">
+      <h3 class="related-articles-title">Voir aussi :</h3>
+      <div class="articles-chips-container">
+        <router-link class="article-chip" :to="{ name: 'omega'}">Omega</router-link>
+        <router-link class="article-chip" :to="{ name: 'saasKaros'}">SaaS Karos</router-link>
+        <router-link class="article-chip" :to="{ name: 'nuit-info'}">Nuit de l'info</router-link>
+        <router-link class="article-chip" :to="{ name: 'vuejs'}">Vuejs</router-link>
+      </div>
+    </div>
     <div class="articles-links-buttons">
       <router-link class="article-link-btn" :to="{ name: 'skills' }">Retour aux compétences</router-link>
     </div>

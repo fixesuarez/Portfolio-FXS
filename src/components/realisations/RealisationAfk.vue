@@ -1,6 +1,9 @@
 <template>
   <div class="article-content">
-    <h3>Présentation – Définition</h3>
+    <h2 class="article-title">Away From Keyboard</h2>
+    <div class="image-container">
+      <img src="../../assets/card-images/afk.png" alt="" class="article-cover">
+    </div>
     <p class="article-paragraph">
       Durant le 4ème semestre d’IN’TECH, les étudiants doivent organiser dans le cadre de leur cursus, un évènement de leur choix de A à Z.
       Avec mon équipe, nous avons décidé d’organiser un tournoi sportif multi-disciplinaire, faisant s’affronter les participants sur de l’accrobranche, du bowling, et du bubble soccer.
@@ -62,6 +65,14 @@
     <p class="article-paragraph">
       Ayant été chef de projet, j’ai été amené à gérer les baisses de motivation de mes camarades, et j’ai assuré un suivi particulier de l’organisation de l’ensemble des actions menées en plus de ma participation.
     </p>
+    <div class="related-articles-container">
+      <h3 class="related-articles-title">Voir aussi :</h3>
+      <div class="articles-chips-container">
+        <router-link class="article-chip" :to="{ name: 'perseverence' }">Persévérance</router-link>
+        <router-link class="article-chip" :to="{ name: 'goodMood' }">Bonne humeur</router-link>
+        <router-link class="article-chip" :to="{ name: 'organization'}">Organisation</router-link>
+      </div>
+    </div>
     <div class="articles-links-buttons">
       <router-link class="article-link-btn" :to="{ name: 'realisations' }">Retour aux réalisations</router-link>
     </div>
@@ -75,5 +86,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import 'src/styles/article'
+@import 'src/styles/article';
+.image-container {
+  display: flex;
+  justify-content: center;
+  .article-cover {
+    max-width: 300px;
+  }
+}
 </style>

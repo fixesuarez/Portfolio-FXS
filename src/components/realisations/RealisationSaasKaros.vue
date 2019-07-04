@@ -1,6 +1,10 @@
 <template>
   <div class="realisation-karos article-content">
-    SaaS Karos :
+    <h2 class="article-title">SaaS Karos</h2>
+    <div class="article-covers-container">
+      <img src="../../assets/article-covers/karos-entreprises.svg" alt="" class="cover-karos-entreprises">
+      <img src="../../assets/article-covers/karos-territoires.svg" alt="" class="cover-karos-territoires">
+    </div>
     <h3>Présentation – Définition :</h3>
     <p class="article-paragraph">
       Karos est une application mettant en relation des individus ayant un itinéraire commun en tout ou partie entre leur domicile et leur travail.
@@ -60,6 +64,17 @@
       La prise en main des deux SaaS aura été plutôt longue et fastidieuse, mais cela me permet aujourd’hui d’être autonome sur n’importe quel développement.
       J’apprends quotidiennement, que ce soit de mes erreurs, de code reviews ou de lecture sur les bonnes pratiques à avoir.
     </p>
+    <div class="related-articles-container">
+      <h3 class="related-articles-title">Voir aussi :</h3>
+      <div class="articles-chips-container">
+        <router-link class="article-chip" :to="{ name: 'goodMood'}">Bonne humeur</router-link>
+        <router-link class="article-chip" :to="{ name: 'perseverence'}">Persévérance</router-link>
+        <router-link class="article-chip" :to="{ name: 'openMinded'}">Ouverture aux autres</router-link>
+        <router-link class="article-chip" :to="{ name: 'vuejs'}">Vuejs</router-link>
+        <router-link class="article-chip" :to="{ name: 'htmlCss'}">HTML / CSS</router-link>
+        <router-link class="article-chip" :to="{ name: 'git'}">Git</router-link>
+      </div>
+    </div>
     <div class="articles-links-buttons">
       <router-link class="article-link-btn" :to="{ name: 'realisations' }">Retour aux réalisations</router-link>
     </div>
@@ -73,5 +88,23 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import 'src/styles/article'
+@import 'src/styles/article';
+.article-covers-container {
+  width: 100%;
+  height: 90vh;
+  position: relative;
+  .cover-karos-entreprises, .cover-karos-territoires {
+    width: 60%;
+    object-fit: contain;
+    position: absolute;
+  }
+  .cover-karos-entreprises {
+    top: 15%;
+    left: 0%;
+  }
+  .cover-karos-territoires {
+    bottom: 35%;
+    right: 0%;
+  }
+}
 </style>

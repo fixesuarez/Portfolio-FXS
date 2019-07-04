@@ -1,6 +1,7 @@
 <template>
   <div class="article-content">
-    <h3>Introduction</h3>
+    <h2 class="article-title">C#</h2>
+    <img src="../../../assets/article-covers/cSharp.svg" alt="" class="article-cover">
     <p class="article-paragraph">
       Le C# est un langage orienté objet supporté par Microsoft. Il permet notamment de créer des applications en client lourd, des serveurs web, des bibliothèques de classe, et même dorénavant des applications mobiles natives ou cross-plateformes via le framework Xamarin.
     </p>
@@ -21,6 +22,13 @@
       Bien que ce ne soit pas une technologie que j'utilise au quotidien, ni que je maîtrise à la perfection, j'ai acquis des bases suffisantes pour pouvoir être autonome, et atteindre mon but à long terme :
       maîtriser une technologie des différentes stacks pour me permettre d'être totalement autonome sur un potentiel projet personnel.
     </p>
+    <div class="related-articles-container">
+      <h3 class="related-articles-title">Voir aussi :</h3>
+      <div class="articles-chips-container">
+        <router-link class="article-chip" :to="{ name: 'omega'}">Omega</router-link>
+        <router-link class="article-chip" :to="{ name: 'nuit-info'}">Nuit de l'info</router-link>
+      </div>
+    </div>
     <div class="articles-links-buttons">
       <router-link class="article-link-btn" :to="{ name: 'skills' }">Retour aux compétences</router-link>
     </div>

@@ -1,6 +1,6 @@
 <template>
   <div id="home-container">
-    <div class="background-image-container">
+    <div class="slide background-image-container">
       <img src="../assets/home_background.png" alt="" class="home-page-background">
       <p class="proverb-first-line">Si haut que l'on soit placé</p>
       <p class="proverb-second-line">On n'est jamais assis que sur son cul</p>
@@ -8,7 +8,7 @@
         <img src="../assets/chevron-down-white.svg" alt="" class="scroll-icn">
       </div>
     </div>
-    <div class="about-me-article">
+    <div class="slide about-me-article">
       <div class="article-content">
         <div class="about-me-header">
           <img src="../assets/profile-picture.jpg" alt="profile-picture" class="profile-picture">
@@ -92,12 +92,37 @@
 
 <script>
 import experiences from '@/assets/timeline.json'
+// import ScrollMagic from 'scrollmagic'
+// import 'scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators'
+// import { TweenMax, Elastic } from 'gsap'
+
+
 export default {
   data () {
     return {
       experiences
     }
   },
+  // mounted () {
+  //   var controller = new ScrollMagic.Controller({
+	// 		globalSceneOptions: {
+	// 			triggerHook: 'onLeave',
+	// 			duration: "200%" // this works just fine with duration 0 as well
+	// 			// However with large numbers (>20) of pinned sections display errors can occur so every section should be unpinned once it's covered by the next section.
+	// 			// Normally 100% would work for this, but here 200% is used, as Panel 3 is shown for more than 100% of scrollheight due to the pause.
+	// 		}
+  //   })
+  //   var slides = document.querySelectorAll(".slide")
+  //   for (var i=0; i<slides.length; i++) {
+	// 		new ScrollMagic.Scene({
+	// 				triggerElement: slides[i]
+	// 			})
+	// 			.setPin(slides[i], {pushFollowers: false})
+	// 			.addIndicators() // add indicators (requires plugin)
+	// 			.addTo(controller);
+	// 	}
+  //   debugger
+  // },
   methods: {
     scrollToContent () {
       document.querySelector('.about-me-article').scrollIntoView({
@@ -213,7 +238,7 @@ $profile-picture-size: 90px;
     border-radius: 30px;
     &:hover {
       opacity: 0.97;
-      transition: all 0.3s ease;
+      transition: all 0.6s ease;
       box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.4);
     }
   }

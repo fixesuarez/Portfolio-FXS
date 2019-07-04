@@ -1,6 +1,7 @@
 <template>
   <div class="article-content">
-    <h1>Persévérance</h1>
+    <h2 class="article-title">Persévérance</h2>
+    <img src="../../../assets/article-covers/perseverence.svg" alt="" class="article-cover">
     <p class="article-paragraph">La persévérance est ce qui permet à ceux qui en font preuve d'atteindre leurs objectifs en dépit des difficultés, qu'elles soient techniques ou contextuelles.</p>
     <h3>Actualité et valeur</h3>
     <p class="article-paragraph">
@@ -34,6 +35,14 @@
       En effet, j'ai tendance à trop me disperser au tout début et trouver la source du problème.
       Par ailleurs, je me serais parfois épargné d'importantes pertes de temps si j'avais été cherché de l'aide plutôt que d'essayer de trouver la solution par moi-même.
     </p>
+    <div class="related-articles-container">
+      <h3 class="related-articles-title">Voir aussi :</h3>
+      <div class="articles-chips-container">
+        <router-link class="article-chip" :to="{ name: 'omega'}">Omega</router-link>
+        <router-link class="article-chip" :to="{ name: 'saasKaros'}">SaaS Karos</router-link>
+        <router-link class="article-chip" :to="{ name: 'nuit-info'}">Nuit de l'info</router-link>
+      </div>
+    </div>
     <div class="articles-links-buttons">
       <router-link class="article-link-btn" :to="{ name: 'skills' }">Retour aux compétences</router-link>
     </div>

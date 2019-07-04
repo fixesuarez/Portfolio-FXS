@@ -1,6 +1,8 @@
 <template>
   <div class="article-content">
-    <h3>Une compétence incontournable pour les développeurs.</h3>
+    <h2 class="article-title">Git</h2>
+    <img src="../../../assets/article-covers/git.svg" alt="" class="article-cover">
+    <h3>Une compétence incontournable pour les développeurs</h3>
     <p class="article-paragraph">
       Git est un outil de gestion de version de fichiers. Il permet aux équipes d'utiliser des fichiers, de les modifier si besoin, et d'en fusionner les différentes versions.
     </p>
@@ -21,6 +23,15 @@
       Je suis aujourd'hui suffisamment aguérri pour utiliser les fonctionnalités qui me sont utiles sans faire de maladresses.
       D'abord habitué à utiliser une interface graphique pour l'utiliser, j'utilise maintenant dans le cadre professionnel la ligne de commande avec un plugin du nom de <a href="https://www.gerritcodereview.com/" target="_blank">Gerrit</a>.
     </p>
+    <div class="related-articles-container">
+      <h3 class="related-articles-title">Voir aussi :</h3>
+      <div class="articles-chips-container">
+        <router-link class="article-chip" :to="{ name: 'saasKaros'}">SaaS Karos</router-link>
+        <router-link class="article-chip" :to="{ name: 'omega'}">Omega</router-link>
+        <router-link class="article-chip" :to="{ name: 'apm'}">APM</router-link>
+        <router-link class="article-chip" :to="{ name: 'nuit-info'}">Nuit de l'info</router-link>
+      </div>
+    </div>
     <div class="articles-links-buttons">
       <router-link class="article-link-btn" :to="{ name: 'skills' }">Retour aux compétences</router-link>
     </div>

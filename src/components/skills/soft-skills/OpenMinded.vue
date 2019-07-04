@@ -1,6 +1,7 @@
 <template>
   <div class="article-content">
-    <h3>Introduction</h3>
+    <h2 class="article-title">Ouverture aux autres</h2>
+    <img src="../../../assets/article-covers/open-minded.svg" alt="" class="article-cover">
     <p class="article-paragraph">
       Que ce soit dans la vie professionnelle ou dans un cadre plus personnel, j’ai pour habitude de recueillir les opinions de mon entourage lorsqu’une problématique émerge, en essayant de trouver un maximum d’avis divergents.
     </p>
@@ -20,6 +21,13 @@
     <p class="article-paragraph">
       Il est fort possible qu’après un début de carrière en temps que développeur, j’exprime le souhait de de faire varier mes missions. N’étant pas encore fixé, les deux évolutions naturelles qui s’offrent à moi seraient de devenir chef de projet ou ingénieur d’affaire. Dans les deux cas, il sera nécessaire d’être en lien avec les clients externes, les équipes de développeurs, et les personnes qui expriment leurs besoins.
     </p>
+    <div class="related-articles-container">
+      <h3 class="related-articles-title">Voir aussi :</h3>
+      <div class="articles-chips-container">
+        <router-link class="article-chip" :to="{ name: 'omega'}">Omega</router-link>
+        <router-link class="article-chip" :to="{ name: 'goodMood'}">Bonne humeur</router-link>
+      </div>
+    </div>
     <div class="articles-links-buttons">
       <router-link class="article-link-btn" :to="{ name: 'skills' }">Retour aux compétences</router-link>
     </div>

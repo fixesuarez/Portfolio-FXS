@@ -1,6 +1,7 @@
 <template>
   <div class="article-content">
-    <h3>Présentation – Définition :</h3>
+    <h2 class="article-title">Omega</h2>
+    <img src="../../assets/article-covers/omega.png" alt="" class="article-cover">
     <p class="article-paragraph">
       Oméga est une application web qui permet à ses utilisateurs de retrouver les playlists de différentes plateformes de streaming telles que Deezer et Spotify de leurs amis, et de les mixer aux leurs en sélectionnant jusqu’à 9 critères (instrumentalité, verbosité, joie, rythme, …).
     </p>
@@ -76,6 +77,16 @@
       J’ai été confronté à des contraintes de sécurité, notamment pour la gestion de l’authentification. A ce niveau, j’ai également géré une « unification des comptes », pour que l’utilisateur n’ait pas besoin de s’authentifier à Deezer, Spotify ET Facebook tour à tour.
       Aujourd’hui, j’ai acquis les compétences techniques de bases pour pouvoir utiliser le <router-link :to="{ name: 'cSharp' }">C#</router-link> pour l’appliquer au développement d’un serveur web.
     </p>
+    <div class="related-articles-container">
+      <h3 class="related-articles-title">Voir aussi :</h3>
+      <div class="articles-chips-container">
+        <router-link class="article-chip" :to="{ name: 'htmlCss'}">HTML / CSS</router-link>
+        <router-link class="article-chip" :to="{ name: 'vuejs'}">Vuejs</router-link>
+        <router-link class="article-chip" :to="{ name: 'perseverence'}">Persévérance</router-link>
+        <router-link class="article-chip" :to="{ name: 'cSharp'}">C#</router-link>
+        <router-link class="article-chip" :to="{ name: 'git'}">Git</router-link>
+      </div>
+    </div>
     <div class="articles-links-buttons">
       <router-link class="article-link-btn" :to="{ name: 'realisations' }">Retour aux réalisations</router-link>
     </div>
