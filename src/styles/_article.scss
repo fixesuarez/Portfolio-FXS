@@ -37,6 +37,14 @@ h3 {
     }
   }
 }
+h4 {
+  margin-bottom: 5px;
+  font-size: 26px;
+  color: #3c3c3c;
+}
+h4 + .article-paragraph {
+  margin-top: 0;
+}
 .article-image-container {
   margin: 80px 0;
   width: 100%;
@@ -64,12 +72,13 @@ h3 {
     .article-chip {
       padding: 10px 20px;
       margin: 0 10px 5px 0;
-      background-color: rgba(240, 195, 0, 0.8);
+      background-color: rgba(35, 64, 153, 1);
+      color: white;
       border: 1px solid #e6e6e6;
-      border-radius: 6px;
+      border-radius: 25px;
       text-decoration: none;
       &:hover {
-        background-color: rgba(240, 195, 0, 0.9);
+        background-color: rgba(35, 64, 153, 0.9);
         box-shadow: 0 1px 4px 0px rgba(0, 0, 0, 0.1);
         transition: all 0.2s ease;
       }

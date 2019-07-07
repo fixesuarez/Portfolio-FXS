@@ -22,7 +22,7 @@
         <div class="contact-infos-container">
           <div class="contact-info-container">
             <img src="./assets/email.svg" class="contact-icn email-icn" alt="">
-            <span class="contact-value email-value">francoisxaviersuarez@gmail.com</span>
+            <a href="mailto:francoisxaviersuarez@gmail.com" class="contact-value email-value">francoisxaviersuarez@gmail.com</a>
           </div>
           <div class="contact-info-container">
             <img src="./assets/phone.svg" class="contact-icn phone-icn" alt="">

@@ -28,7 +28,7 @@ export default [{
   component: RealisationApm,
   name: 'apm'
 }, {
-  path: `${basePath}/nuit-info`,
+  path: `${basePath}/nuit-de-l-info`,
   component: RealisationNuitInfo,
   name: 'nuit-info'
 }]

@@ -5,7 +5,7 @@
       <p class="proverb-first-line">Si haut que l'on soit placé</p>
       <p class="proverb-second-line">On n'est jamais assis que sur son cul</p>
       <div class="scroll-icn-container" @click="scrollToContent()">
-        <img src="../assets/chevron-down-white.svg" alt="" class="scroll-icn">
+        <img src="../assets/chevron-down-white.svg" alt="Continuer la lecture" class="scroll-icn">
       </div>
     </div>
     <div class="slide about-me-article">
@@ -19,44 +19,48 @@
         </div>
         <h3>Une vision d'ensemble</h3>
         <p class="article-paragraph">
-          Je fais partie d'une fratrie de 8 enfants. Indéniablement, cela a influé sur mon sens du partage, mon éducation, ma mentalité et mon épanouïssement personnel.
-          Etant un des plus jeune, je me suis fait ma place tout en restant calme et discret, mais aussi plaisantin et souriant.
-          Ce sont des valeurs que je retrouve à travers différentes activités :
-          <ul>
-            <li>L'escalade, que je pratique maintenant depuis plusieurs années, est un sport qui me permet de me fixer des objectifs qui me sont propres,
+          Je fais partie d'une fratrie de 8 enfants. Indéniablement, cela a influé sur mon sens du partage, mon éducation, ma mentalité et mon épanouissement personnel.
+          Étant un des plus jeune, je me suis fait ma place tout en restant calme et discret, mais aussi plaisantin et souriant.
+          Ce sont des valeurs que je retrouve à travers différentes activités.
+          <h4>Escalade</h4>
+          <p class="article-paragraph">
+              Activité que je pratique maintenant depuis plusieurs années, c'est un sport qui me permet de me fixer des objectifs qui me sont propres,
               n'obligeant que moi à me surpasser sans me mettre en compétition avec d'autres et sans me comparer à qui que ce soit.
               Dans l'ensemble, les personnes pratiquant ce sport ont un profil bienveillant, solidaire, souhaitant la réussite de l'autre.
-              Ainsi, je fréquente aujourd'hui plusieurs fois par semaine des passionnés avec qui j'ai la chance de partager de bon moments.
-            </li>
-            <li>
-              Dévenu bénévole chez les <i>Scouts et Guides de France</i> depuis l'année 2013, j'ai découvert un univers où l'entraide et le partage sont omniprésents.
-              Depuis que j'ai commencé cette activité, j'ai gagné de la confiance en moi. D'abord part la prise de responsabilité qui est de veiller à la sécurité physique et mentale des enfants qui nous sont confiés, mais aussi par les temps d'animations dont je suis rapidement devenu adepte.
-              En y investissant plusieurs centaines d'heures par an, j'ai pu monter et vivre à l'aide d'autres bénévoles des projets incroyables. Le plus illustre étant d'avoir emmené 35 jeunes à un rassemblement de plus de 5000 personnes en Espagne.
-            </li>
-            <li>
-              A l'heure ou je rédige cet article, les différentes équipes avec lesquelles je travaille, aussi bien dans ma vie étudiante que professionnelle, me mettent dans les meilleurs dispositions pour que je puisse travailler dans les meilleurs conditions, en alliant sérieux, efficacité et bonne humeur.
-              Je peux alors être pleinement moi-même au milieu de ces collègues et camarades, parfois devenus amis depuis lors. Souvent engagés et portant des valeurs fortes, je peux sans cesse recueillir de nouvelles opinions, et les confronter avec les miennes, même si de par mon caractère, je n'expose pas immédiatement mes idées divergeantes.
-            </li>
-          </ul>
-        </p>
+              Ainsi, je fréquente aujourd'hui plusieurs fois par semaine des passionnés avec qui j'ai la chance de partager de bons moments.
+          </p>
+          <h4>Scouts et Guides de France</h4>
+          <p class="article-paragraph">
+            Devenu bénévole en 2013, j'ai découvert un univers où l'entraide et le partage sont omniprésents.
+            Depuis que j'ai commencé cette activité, j'ai gagné de la confiance en moi. D'abord, part la prise de responsabilité qui est de veiller à la sécurité physique et mentale des enfants qui nous sont confiés, mais aussi par les temps d'animations dont je suis rapidement devenu adepte.
+            En y investissant plusieurs centaines d'heures par an, j'ai pu monter et vivre à l'aide d'autres bénévoles des projets incroyables. Le plus illustre étant d'avoir emmené 35 jeunes à un rassemblement de plus de 5000 personnes en Espagne.
+          </p>
+          <h4>Vie professionnelle & étudiante</h4>
+          <p class="article-paragraph">
+            A l'heure où je rédige cet article, les différentes équipes avec lesquelles je travaille me mettent dans les conditions idéales pour  travailler, alliant sérieux, efficacité et bonne humeur.
+            Je peux alors être pleinement moi-même au milieu de ces collègues et camarades, parfois devenus amis depuis lors.
+            Souvent engagés et portant des valeurs fortes, je peux sans cesse recueillir de nouvelles opinions et les confronter avec les miennes, même si de par mon caractère, je n'expose pas immédiatement mes idées divergentes.
+          </p>
         <span class="article-separator">*</span>
         <h3>Projet personnel et professionnel</h3>
           <p class="article-paragraph">
-            J'ai prévu pour le court et moyen terme de persévérer sur un métier technique plus que sur de la gestion de projet.
+            J'ai prévu pour le court et moyen terme de persévérer sur un métier technique plutôt que sur de la gestion de projet.
             Les principales raisons étant l'aspect ludique du métier, ainsi les innombrables domaines d'expertises qui pourraient retirer à tout homme le rêve d'être omniscient, me permettant ainsi de ne pas tomber dans une routine et une passivité cérébrale qui me seraient fatales.
             Sans pour autant avoir de projet professionnel bien défini sur le long terme, des idées me trottent dans la tête, telles qu'une aventure entrepreneuriale, tenter ma chance en freelance, essayer la gestion de projet, ou même pourquoi pas,
             changer complètement d'activité si j'ai un jour une révélation.
           </p>
           <p class="article-paragraph">
-            J'ai eu l'opportunité malgré mon jeune âge de travailler dans de très différentes structures, aussi bien en ce qui concerne le secteur d'activité que la taille et la culture d'entreprise :
+            Malgré mon jeune âge, j'ai eu l'opportunité de travailler dans de très différentes structures, aussi bien en ce qui concerne le secteur d'activité que la taille et la culture d'entreprise :
             <ul>
               <li>Groupe BPCE (Secteur bancaire, ~16 000 collaborateurs)</li>
               <li>Axones (ESN, ~100 collaborateurs)</li>
               <li>Groupe Astek (ESN, ~3000 collaborateurs)</li>
               <li>Karos (Startup, équipe de 30 personnes)</li>
             </ul>
-            J'en ai déduit que c'est au sein d'organisations de taille restreinte que je me sens le plus à l'aise. D'autre part, je me suis rendu compte que je veux donner un sens à mon travail, non pas pour ma carrière, mais pour travailler pour une cause qui me semble juste, un idéal.
-            Je ne serai donc pas surpris que je continue d'évoluer dans des petites entreprises, voire des associations qui souhaitent avoir un impact environnemental ou social, que ce soit de manière directe ou non.
+            J'en ai déduit que c'est au sein d'organisations de taille restreinte que je me sens le plus à l'aise.
+            D'autre part, je me suis rendu compte qu'il était important pour moi de donner un sens à mon travail.
+            Pas pour orienter ma carrière, mais pour travailler pour servir une cause qui me semble juste, mon idéal.
+            Je ne serai donc pas surpris de me voir évoluer dans des petites entreprises, voire des associations qui souhaitent avoir un impact environnemental ou social, que ce soit de manière directe ou non.
           </p>
       </div>
     </div>
@@ -72,8 +76,8 @@
           <span class="experience-name">{{ experience.label }}</span>
           <div class="tooltip-container">
             <div class="tooltip-content">
-              <span class="tooltip-experience-name">{{ experience.label }}</span>
               <span class="tooltip-experience-date">{{ experience.period }}</span>
+              <span class="tooltip-experience-name">{{ experience.label }}</span>
               <div class="info-container">
                 <span class="info-label">Lieu : </span>
                 <span class="info-value">{{ experience.place }}</span>
@@ -92,9 +96,8 @@
 
 <script>
 import experiences from '@/assets/timeline.json'
-// import ScrollMagic from 'scrollmagic'
-// import 'scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators'
-// import { TweenMax, Elastic } from 'gsap'
+import ScrollMagic from 'scrollmagic'
+import 'imports-loader?define=>false!scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators'
 
 
 export default {
@@ -103,26 +106,25 @@ export default {
       experiences
     }
   },
-  // mounted () {
-  //   var controller = new ScrollMagic.Controller({
-	// 		globalSceneOptions: {
-	// 			triggerHook: 'onLeave',
-	// 			duration: "200%" // this works just fine with duration 0 as well
-	// 			// However with large numbers (>20) of pinned sections display errors can occur so every section should be unpinned once it's covered by the next section.
-	// 			// Normally 100% would work for this, but here 200% is used, as Panel 3 is shown for more than 100% of scrollheight due to the pause.
-	// 		}
-  //   })
+  mounted () {
+    // var controller = new ScrollMagic.Controller({
+		// 	globalSceneOptions: {
+		// 		triggerHook: 'onLeave',
+		// 		duration: "200%" // this works just fine with duration 0 as well
+		// 		// However with large numbers (>20) of pinned sections display errors can occur so every section should be unpinned once it's covered by the next section.
+		// 		// Normally 100% would work for this, but here 200% is used, as Panel 3 is shown for more than 100% of scrollheight due to the pause.
+		// 	}
+    // })
   //   var slides = document.querySelectorAll(".slide")
   //   for (var i=0; i<slides.length; i++) {
 	// 		new ScrollMagic.Scene({
 	// 				triggerElement: slides[i]
 	// 			})
-	// 			.setPin(slides[i], {pushFollowers: false})
+	// 			.setPin(slides[i], { pushFollowers: false })
 	// 			.addIndicators() // add indicators (requires plugin)
 	// 			.addTo(controller);
 	// 	}
-  //   debugger
-  // },
+  },
   methods: {
     scrollToContent () {
       document.querySelector('.about-me-article').scrollIntoView({
@@ -271,7 +273,7 @@ $profile-picture-size: 90px;
     align-items: center;
     .timeline-stroke {
       height: 2px;
-      width: 100px;
+      width: 70px;
       background: $main-color;
     }
     .experience-image-container {
@@ -330,16 +332,15 @@ $profile-picture-size: 90px;
           }
           .tooltip-experience-name {
             align-self: center;
-            font-weight: 900;
-            white-space: nowrap;
-          }
-          .tooltip-experience-date {
-            align-self: center;
-            font-size: 12px;
+            font-size: 14px;
             white-space: nowrap;
             color: #a6a6a6;
             margin-bottom: 10px;
-
+          }
+          .tooltip-experience-date {
+            align-self: center;
+            font-weight: 900;
+            white-space: nowrap;
           }
           .info-container {
             white-space: nowrap;

@@ -53,12 +53,12 @@
     <p class="article-paragraph">
       En réunissant 20 participants pendant chaque activité à faible coût,
       nous avons tissé des liens entre des étudiants qui se connaissaient peu, et amélioré les relations avec les membres de l’équipe pédagogique d’IN’TECH qui ont souhaité participer.
-      Evalué avec en même temps qu’une vingtaine de projet, nous nous sommes vus attribué la 2ème place sur le podium.
+      Evalués avec en même temps qu’une vingtaine de projets, nous nous sommes vus attribuer la 2ème place sur le podium.
     </p>
 
     <h3>Les lendemains du projet</h3>
     <p class="article-paragraph">
-      Si le concept n’a pas été exactement repris, nous avons déjà pu constater que les étudiants sont de plus en plus impliqué dans les évènements organisés : dès le semestre suivant, un laser game, un escape game, un voyage à europa park et bien d’autres projets ont vu le jour.
+      Si le concept n’a pas été exactement repris, nous avons déjà pu constater que les étudiants sont de plus en plus impliqués dans les évènements organisés : dès le semestre suivant, un laser game, un escape game, un voyage à europa park et bien d’autres projets ont vu le jour.
     </p>
 
     <h3>Mes apports sur le projet, ma valeur ajoutée, les enseignements tirés</h3>

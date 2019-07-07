@@ -21,7 +21,7 @@
 
     <h3>Les étapes</h3>
     <p class="article-paragraph">
-      Une fois les sujets dévoilés, mon équipe et moi nous sommes concentrés sur le projet de Décathlon, qui imposait le framework front avec lequel nous étions familiés,
+      Une fois les sujets dévoilés, mon équipe et moi nous sommes concentrés sur le projet de Décathlon, qui imposait le framework front avec lequel nous étions familiers,
       et demandait à avoir un back. Etant donné que nous étions 2 developpeurs axés front, et 2 développeurs axés back, nous avons de suite vu l'opportunité de faire
       quelque chose.
     </p>
@@ -40,10 +40,12 @@
     <h3>Mes apports sur le projet, ma valeur ajoutée, les enseignements tirés</h3>
     <p class="article-paragraph">
       La difficulté a été de prioriser les tâches, trouver le bon équilibre entre une interface agréable, des fonctionnalités robustes, et une architecture simple et efficace.
-      Au terme dizaine d'heures de travail, nous avons pu constater fièrement le travail abattu, qui plus est après une journée de travail complète dans nos entreprises respectives.
+      Au terme d'une dizaine d'heures de travail nous avons pu constater fièrement le travail abattu... qui plus est après une journée de travail complète dans nos entreprises respectives.
     </p>
     <p class="article-paragraph">
-      J'ai pu me rendre compte que j'ai acquis des bases solides dans l'architecture d'un projet front, en mettant en place efficacement un router, un store, et différents fichiers helpers qui nous ont servi à faire des appels asynchrones à notre serveur, mais qui recensaient aussi des fonctions globales au projet.
+      J'ai pu me rendre compte que j'ai acquis des bases solides dans l'architecture d'un projet front.
+      Elles m'ont permis de mettre en place efficacement un router, un store, et différents fichiers helpers.
+      Ces derniers nous ont servi à faire des appels asynchrones à notre serveur, mais ils recensaient aussi des fonctions globales au projet.
     </p>
     <div class="related-articles-container">
       <h3 class="related-articles-title">Voir aussi :</h3>

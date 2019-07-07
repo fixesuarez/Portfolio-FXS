@@ -3,7 +3,7 @@
     <div class="skills-index-landing">
       <span class="landing-text">Compétences</span>
       <div @click="scrollToContent()" class="scroll-icn-container">
-        <img src="../../assets/chevron-down.svg" alt="" class="scroll-icn">
+        <img src="../../assets/chevron-down.svg" alt="Continuer la lecture" class="scroll-icn">
       </div>
     </div>
     <div class="skills-categories-container" id="articles-content">

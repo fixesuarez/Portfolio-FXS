@@ -11,7 +11,7 @@
       Durant 3 semestres, j'ai pû entretenir et approfondir les compétences acquises.
     </p>
     <p class="article-paragraph">
-      A travers un premier projet, <i>Chick'End</i>, je me suis fait la main en développant avec mon équipe un jeu en client lourd, créeant des intéractions entre différentes classes, implémentant des interfaces, et créant des interfaces graphiques.
+      A travers un premier projet, <i>Chick'End</i>, je me suis fait la main en développant avec mon équipe un jeu en client lourd, créant des intéractions entre différentes classes, implémentant des interfaces, et créant des interfaces graphiques.<br/>
       Plus tard, le projet <router-link :to="{ name: 'omega' }">Omega</router-link> m'a permis de rentrer dans l'univers du Web. Faisant des appels aux APIs de Facebook, Spotify et Deezer, établissant une connexion sécurisée, et stockant les données dans des Tables Azure, mon premier serveur web a vu le jour.
     </p>
     <p class="article-paragraph">

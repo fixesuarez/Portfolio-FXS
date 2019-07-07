@@ -7,8 +7,8 @@
     </div>
     <h3>Présentation – Définition :</h3>
     <p class="article-paragraph">
-      Karos est une application mettant en relation des individus ayant un itinéraire commun en tout ou partie entre leur domicile et leur travail.
-      Karos développe deux SaaS à destination des entreprises et des territoires, leur permettant de paramétrer l’offre Karos pour leurs utilisateurs, proposer des outils de communication, consulter des statistiques en temps réel.
+      Karos est une application mettant en relation des individus ayant un itinéraire commun (en tout ou partie) entre leur domicile et leur travail.
+      Karos développe deux SaaS à destination des entreprises et des territoires, leur permettant de paramétrer l’offre Karos pour leurs utilisateurs, créer des outils de communication, consulter des statistiques en temps réel.
     </p>
     <h3>Objectifs :</h3>
     <p class="article-paragraph">
@@ -18,12 +18,12 @@
         <li>Outils d’incitations à l’inscription et à la rétention des utilisateurs</li>
       </ul>
     </p>
-    <h3>Contexte, enjeu</h3>
+    <h3>Contexte, enjeux</h3>
     <p class="article-paragraph">
       Les SaaS ont pour mission d’automatiser et de faciliter la vie de nos Projects Managers, nos équipes de communications et nos designers en automatisant la production de visuels et la saisie des différents paramètres.
       Cela nous permet de multiplier les contrats avec les entreprises et les territoires partenaires, le nombre d’utilisateurs de l’application, ce qui implique une fluidification du trafic routier, un gain de pouvoir d’achat, et la diminution d’émission de différents agents polluant.
     </p>
-    <h3> étapes</h3>
+    <h3>Étapes</h3>
     <p class="article-paragraph">
       Le développement des différentes plateformes était déjà avancé lors de mon arrivée, mais les plateformes sont et seront toujours en constante évolution.
       Je suis en binôme sur les développements frontend des deux projets (SaaS Karos Entreprises et Karos Territoires).
@@ -35,8 +35,8 @@
       Un travail conséquent a aussi été fourni pour le développement de fonctionnalités permettant d’automatiser certaines tâches rébarbatives et fastidieuses de suivi clients que devaient auparavant faire manuellement les Project Managers, dans des phases de planification et de définition des besoins.
     </p>
     <p class="article-paragraph">
-      Un besoin de design a également fait surface, ce qui ma donné l’opportunité de réaliser des maquettes dans le respect de la charte graphique et de cohérence des interfaces déjà existantes
-      Enfin, en marge de ces tâches quotidiennes, j’ai commencé à écrire des tests unitaires qui nous permettront à long terme d’éviter les régressions et éviter l’apparition de bugs divers.
+      Un besoin de design a également fait surface, ce qui ma donné l’opportunité de réaliser des maquettes dans le respect de la charte graphique et de cohérence des interfaces déjà existantes.
+      Enfin, en marge de ces tâches quotidiennes, j’ai commencé à écrire des tests unitaires qui nous permettront à long terme d’éviter les régressions et l’apparition de bugs divers.
     </p>
     <h3>Acteurs</h3>
     <p class="article-paragraph">

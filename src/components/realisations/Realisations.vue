@@ -3,7 +3,7 @@
     <div class="realisations-index-landing">
       <h2 class="landing-text">Réalisations</h2>
       <div class="scroll-icn-container" @click="scrollToContent()">
-        <img src="../../assets/chevron-down.svg" alt="" class="scroll-icn">
+        <img src="../../assets/chevron-down.svg" alt="Continuer la lecture" class="scroll-icn">
       </div>
     </div>
     <div class="realisation-cards-container">
