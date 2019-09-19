@@ -55,7 +55,7 @@
     <h3>Les résultats :</h3>
     <p class="article-paragraph">
       Nous avons réussi à aller au-delà du POC prévu, en aboutissant sur une version stable de l’application.
-      A la fin du semestre, nous avons été évalué par trois jurys composés de professionnels, qui nous ont attribué la première place parmi plus de 45 projets.
+      A la fin du semestre, nous avons été évalués par trois jurys composés de professionnels, qui nous ont attribué la première place parmi plus de 45 projets.
     </p>
 
     <div class="article-image-container">

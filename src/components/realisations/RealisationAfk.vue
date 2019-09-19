@@ -6,7 +6,7 @@
     </div>
     <p class="article-paragraph">
       Durant le 4ème semestre d’IN’TECH, les étudiants doivent organiser dans le cadre de leur cursus, un évènement de leur choix de A à Z.
-      Avec mon équipe, nous avons décidé d’organiser un tournoi sportif multi-disciplinaire, faisant s’affronter les participants sur de l’accrobranche, du bowling, et du bubble soccer.
+      Avec mon équipe, nous avons décidé d’organiser un tournoi sportif multidisciplinaire, faisant s’affronter les participants sur de l’accrobranche, du bowling, et du bubble soccer.
     </p>
 
     <h3>Objectifs</h3>

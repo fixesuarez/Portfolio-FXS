@@ -13,7 +13,7 @@
       La subtilité consiste à conserver un code lisible, compréhensible en une lecture, et facilement éditable par autrui.
     </p>
     <p class="article-paragraph">
-      Le design d'interface graphique <i>(appelé User Interface design)</i> et leurs intéractions avec le système <i>(appelé User eXperience design)</i> sont des disciplines à part entière.
+      Le design d'interface graphique <i>(appelé User Interface design)</i> et leurs interactions avec le système <i>(appelé User eXperience design)</i> sont des disciplines à part entière.
       Leur apprentissage doit être quotidien, car les tendances et les normes changent constamment. Etant récemment arrivé dans l'univers du développement frontend, je suis encore novice en la matière.
     </p>
     <p class="article-paragraph">
@@ -24,10 +24,10 @@
 
     <h3>En quête d'approfondissement</h3>
     <p class="article-paragraph">
-      Que ce soit pour le HTML ou le CSS, il existe des préprocesseur qui permettent d'utiliser d'autres syntaxes. Je ne connais à ce jour pas leurs avantages et leurs inconvénients (si toutefois ils en ont).
+      Que ce soit pour le HTML ou le CSS, il existe des préprocesseurs qui permettent d'utiliser d'autres syntaxes. Je ne connais à ce jour pas leurs avantages et leurs inconvénients (si toutefois ils en ont).
     </p>
     <p class="article-paragraph">
-      A ma charge donc, pour les temps à venir de prendre le temps de me documenter à leur sujet, mais également de me pencher sur les fonctionnalités les plus avancées de ces deux langages, qui même si rarement utilisées, pourraient m'être fortes utiles.
+      A ma charge donc, pour les temps à venir de prendre le temps de me documenter à leur sujet, mais également de me pencher sur les fonctionnalités les plus avancées de ces deux langages, qui même si rarement utilisées, pourraient m'être forts utiles.
     </p>
     <div class="related-articles-container">
       <h3 class="related-articles-title">Voir aussi :</h3>

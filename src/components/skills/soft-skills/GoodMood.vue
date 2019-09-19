@@ -20,7 +20,7 @@
     </p>
     <p class="article-paragraph">
       Cependant, les efforts que je fournis toute la journée pour afficher cette bonne humeur apparente, parfois en la forçant, engendrent également leurs lots d'épuisement.
-      Je ressens cette fatigue quand la "pression sociale" se relache, pas forcément en fin de journée de travail, mais une fois que je suis chez moi sans convives.
+      Je ressens cette fatigue quand la "pression sociale" se relâche, pas forcément en fin de journée de travail, mais une fois que je suis chez moi sans convives.
     </p>
 
     <h3 class="article-quote">“Mais toi de toutes façons, tu es toujours de bonne humeur !”</h3>

@@ -3,7 +3,8 @@
     <div class="slide background-image-container">
       <img src="../assets/home_background.png" alt="" class="home-page-background">
       <p class="proverb-first-line">Si haut que l'on soit placé</p>
-      <p class="proverb-second-line">On n'est jamais assis que sur son cul</p>
+      <p class="proverb-second-line">On n'est jamais assis que sur son cul.</p>
+      <p class="proverb-author">- Michel de Montaigne -</p>
       <div class="scroll-icn-container" @click="scrollToContent()">
         <img src="../assets/chevron-down-white.svg" alt="Continuer la lecture" class="scroll-icn">
       </div>
@@ -60,7 +61,7 @@
             J'en ai déduit que c'est au sein d'organisations de taille restreinte que je me sens le plus à l'aise.
             D'autre part, je me suis rendu compte qu'il était important pour moi de donner un sens à mon travail.
             Pas pour orienter ma carrière, mais pour travailler pour servir une cause qui me semble juste, mon idéal.
-            Je ne serai donc pas surpris de me voir évoluer dans des petites entreprises, voire des associations qui souhaitent avoir un impact environnemental ou social, que ce soit de manière directe ou non.
+            Je ne serais donc pas surpris de me voir évoluer dans des petites entreprises, voire des associations qui souhaitent avoir un impact environnemental ou social, que ce soit de manière directe ou non.
           </p>
       </div>
     </div>
@@ -106,25 +107,6 @@ export default {
       experiences
     }
   },
-  mounted () {
-    // var controller = new ScrollMagic.Controller({
-		// 	globalSceneOptions: {
-		// 		triggerHook: 'onLeave',
-		// 		duration: "200%" // this works just fine with duration 0 as well
-		// 		// However with large numbers (>20) of pinned sections display errors can occur so every section should be unpinned once it's covered by the next section.
-		// 		// Normally 100% would work for this, but here 200% is used, as Panel 3 is shown for more than 100% of scrollheight due to the pause.
-		// 	}
-    // })
-  //   var slides = document.querySelectorAll(".slide")
-  //   for (var i=0; i<slides.length; i++) {
-	// 		new ScrollMagic.Scene({
-	// 				triggerElement: slides[i]
-	// 			})
-	// 			.setPin(slides[i], { pushFollowers: false })
-	// 			.addIndicators() // add indicators (requires plugin)
-	// 			.addTo(controller);
-	// 	}
-  },
   methods: {
     scrollToContent () {
       document.querySelector('.about-me-article').scrollIntoView({
@@ -160,6 +142,13 @@ $profile-picture-size: 90px;
       position: absolute;
       top: calc(#{$name-offset-top} + 47%);
       left: calc(#{$name-offset-left} + 20%);
+    }
+    .proverb-author {
+      position: absolute;
+      top: calc(#{$name-offset-top} + 57%);
+      left: calc(#{$name-offset-left} + 20%);
+      font-style: italic;
+      font-size: 20px;
     }
   }
   .home-page-background {

@@ -22,7 +22,7 @@
     <h3>Les étapes</h3>
     <p class="article-paragraph">
       Une fois les sujets dévoilés, mon équipe et moi nous sommes concentrés sur le projet de Décathlon, qui imposait le framework front avec lequel nous étions familiers,
-      et demandait à avoir un back. Etant donné que nous étions 2 developpeurs axés front, et 2 développeurs axés back, nous avons de suite vu l'opportunité de faire
+      et demandait à avoir un back. Etant donné que nous étions 2 développeurs axés front, et 2 développeurs axés back, nous avons de suite vu l'opportunité de faire
       quelque chose.
     </p>
     <p class="article-paragraph">

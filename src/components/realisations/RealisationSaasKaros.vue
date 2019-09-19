@@ -35,7 +35,7 @@
       Un travail conséquent a aussi été fourni pour le développement de fonctionnalités permettant d’automatiser certaines tâches rébarbatives et fastidieuses de suivi clients que devaient auparavant faire manuellement les Project Managers, dans des phases de planification et de définition des besoins.
     </p>
     <p class="article-paragraph">
-      Un besoin de design a également fait surface, ce qui ma donné l’opportunité de réaliser des maquettes dans le respect de la charte graphique et de cohérence des interfaces déjà existantes.
+      Un besoin de design a également fait surface, ce qui m'a donné l’opportunité de réaliser des maquettes dans le respect de la charte graphique et de cohérence des interfaces déjà existantes.
       Enfin, en marge de ces tâches quotidiennes, j’ai commencé à écrire des tests unitaires qui nous permettront à long terme d’éviter les régressions et l’apparition de bugs divers.
     </p>
     <h3>Acteurs</h3>
